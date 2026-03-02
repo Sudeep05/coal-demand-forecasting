@@ -1,0 +1,108 @@
+[2026-03-02 18:09:34] [INFO] [preprocessing] ==================================================
+[2026-03-02 18:09:34] [INFO] [preprocessing] Starting data preprocessing...
+[2026-03-02 18:09:34] [INFO] [preprocessing] ==================================================
+[2026-03-02 18:09:34] [INFO] [preprocessing] Input shape: (1096, 8)
+[2026-03-02 18:09:34] [INFO] [preprocessing] Forward-filling missing values...
+[2026-03-02 18:09:34] [INFO] [preprocessing]   power_generation_mw: 10 missing values filled
+[2026-03-02 18:09:34] [INFO] [preprocessing]   coal_consumption_tonnes: 10 missing values filled
+[2026-03-02 18:09:34] [INFO] [preprocessing]   temperature_c: 10 missing values filled
+[2026-03-02 18:09:34] [INFO] [preprocessing]   coal_price_inr: 10 missing values filled
+[2026-03-02 18:09:34] [INFO] [preprocessing]   inventory_level_tonnes: 10 missing values filled
+[2026-03-02 18:09:34] [INFO] [preprocessing] Total missing values fixed: 50
+[2026-03-02 18:09:34] [INFO] [preprocessing] Capping outliers at IQR bounds...
+[2026-03-02 18:09:34] [INFO] [preprocessing]   power_generation_mw: 40 outliers capped (bounds: [369.12, 698.47])
+[2026-03-02 18:09:34] [INFO] [preprocessing]   coal_consumption_tonnes: 30 outliers capped (bounds: [149.29, 327.67])
+[2026-03-02 18:09:34] [INFO] [preprocessing] Total outliers capped: 70
+[2026-03-02 18:09:34] [INFO] [preprocessing] Adding calendar features...
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added month, quarter, day_of_week
+[2026-03-02 18:09:34] [INFO] [preprocessing] Adding lag features...
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added lag_1
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added lag_7
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added lag_30
+[2026-03-02 18:09:34] [INFO] [preprocessing] Adding rolling features...
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added rolling_mean_7
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added rolling_mean_30
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added rolling_std_7
+[2026-03-02 18:09:34] [INFO] [preprocessing] Adding interaction features...
+[2026-03-02 18:09:34] [INFO] [preprocessing]   Added temp_coal_interaction
+[2026-03-02 18:09:34] [INFO] [preprocessing] Dropped 30 rows with NaN from feature engineering
+[2026-03-02 18:09:34] [INFO] [preprocessing] Processed shape: (1066, 18)
+[2026-03-02 18:09:34] [INFO] [preprocessing] Processed data saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/processed/processed_data.csv
+[2026-03-02 18:09:34] [INFO] [preprocessing] Train set: (746, 18) (2022-01-31 00:00:00 → 2024-02-15 00:00:00)
+[2026-03-02 18:09:34] [INFO] [preprocessing] Val set:   (160, 18) (2024-02-16 00:00:00 → 2024-07-24 00:00:00)
+[2026-03-02 18:09:34] [INFO] [preprocessing] Test set:  (160, 18) (2024-07-25 00:00:00 → 2024-12-31 00:00:00)
+[2026-03-02 18:09:34] [INFO] [preprocessing] Scaler saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/scaler.pkl
+[2026-03-02 18:09:34] [INFO] [preprocessing] Train/val/test CSVs saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/processed
+[2026-03-02 18:09:34] [INFO] [preprocessing] Preprocessing complete.
+[2026-03-02 18:12:48] [INFO] [preprocessing] ==================================================
+[2026-03-02 18:12:48] [INFO] [preprocessing] Starting data preprocessing...
+[2026-03-02 18:12:48] [INFO] [preprocessing] ==================================================
+[2026-03-02 18:12:48] [INFO] [preprocessing] Input shape: (1096, 8)
+[2026-03-02 18:12:48] [INFO] [preprocessing] Forward-filling missing values...
+[2026-03-02 18:12:48] [INFO] [preprocessing]   power_generation_mw: 10 missing values filled
+[2026-03-02 18:12:48] [INFO] [preprocessing]   coal_consumption_tonnes: 10 missing values filled
+[2026-03-02 18:12:48] [INFO] [preprocessing]   temperature_c: 10 missing values filled
+[2026-03-02 18:12:48] [INFO] [preprocessing]   coal_price_inr: 10 missing values filled
+[2026-03-02 18:12:48] [INFO] [preprocessing]   inventory_level_tonnes: 10 missing values filled
+[2026-03-02 18:12:48] [INFO] [preprocessing] Total missing values fixed: 50
+[2026-03-02 18:12:48] [INFO] [preprocessing] Capping outliers at IQR bounds...
+[2026-03-02 18:12:48] [INFO] [preprocessing]   power_generation_mw: 41 outliers capped (bounds: [372.81, 689.87])
+[2026-03-02 18:12:48] [INFO] [preprocessing]   coal_consumption_tonnes: 32 outliers capped (bounds: [153.46, 323.43])
+[2026-03-02 18:12:48] [INFO] [preprocessing] Total outliers capped: 73
+[2026-03-02 18:12:48] [INFO] [preprocessing] Adding calendar features...
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added month, quarter, day_of_week
+[2026-03-02 18:12:48] [INFO] [preprocessing] Adding lag features...
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added lag_1
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added lag_7
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added lag_30
+[2026-03-02 18:12:48] [INFO] [preprocessing] Adding rolling features...
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added rolling_mean_7
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added rolling_mean_30
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added rolling_std_7
+[2026-03-02 18:12:48] [INFO] [preprocessing] Adding interaction features...
+[2026-03-02 18:12:48] [INFO] [preprocessing]   Added temp_coal_interaction
+[2026-03-02 18:12:48] [INFO] [preprocessing] Dropped 30 rows with NaN from feature engineering
+[2026-03-02 18:12:48] [INFO] [preprocessing] Processed shape: (1066, 18)
+[2026-03-02 18:12:48] [INFO] [preprocessing] Processed data saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/processed/processed_data.csv
+[2026-03-02 18:12:48] [INFO] [preprocessing] Train set: (746, 18) (2022-01-31 00:00:00 → 2024-02-15 00:00:00)
+[2026-03-02 18:12:48] [INFO] [preprocessing] Val set:   (160, 18) (2024-02-16 00:00:00 → 2024-07-24 00:00:00)
+[2026-03-02 18:12:48] [INFO] [preprocessing] Test set:  (160, 18) (2024-07-25 00:00:00 → 2024-12-31 00:00:00)
+[2026-03-02 18:12:48] [INFO] [preprocessing] Scaler saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/scaler.pkl
+[2026-03-02 18:12:48] [INFO] [preprocessing] Train/val/test CSVs saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/processed
+[2026-03-02 18:12:48] [INFO] [preprocessing] Preprocessing complete.
+[2026-03-02 18:17:29] [INFO] [preprocessing] ==================================================
+[2026-03-02 18:17:29] [INFO] [preprocessing] Starting data preprocessing...
+[2026-03-02 18:17:29] [INFO] [preprocessing] ==================================================
+[2026-03-02 18:17:29] [INFO] [preprocessing] Input shape: (1096, 8)
+[2026-03-02 18:17:29] [INFO] [preprocessing] Forward-filling missing values...
+[2026-03-02 18:17:29] [INFO] [preprocessing]   power_generation_mw: 10 missing values filled
+[2026-03-02 18:17:29] [INFO] [preprocessing]   coal_consumption_tonnes: 10 missing values filled
+[2026-03-02 18:17:29] [INFO] [preprocessing]   temperature_c: 10 missing values filled
+[2026-03-02 18:17:29] [INFO] [preprocessing]   coal_price_inr: 10 missing values filled
+[2026-03-02 18:17:29] [INFO] [preprocessing]   inventory_level_tonnes: 10 missing values filled
+[2026-03-02 18:17:29] [INFO] [preprocessing] Total missing values fixed: 50
+[2026-03-02 18:17:29] [INFO] [preprocessing] Capping outliers at IQR bounds...
+[2026-03-02 18:17:29] [INFO] [preprocessing]   power_generation_mw: 37 outliers capped (bounds: [363.82, 700.31])
+[2026-03-02 18:17:29] [INFO] [preprocessing]   coal_consumption_tonnes: 26 outliers capped (bounds: [150.49, 326.62])
+[2026-03-02 18:17:29] [INFO] [preprocessing] Total outliers capped: 63
+[2026-03-02 18:17:29] [INFO] [preprocessing] Adding calendar features...
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added month, quarter, day_of_week
+[2026-03-02 18:17:29] [INFO] [preprocessing] Adding lag features...
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added lag_1
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added lag_7
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added lag_30
+[2026-03-02 18:17:29] [INFO] [preprocessing] Adding rolling features...
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added rolling_mean_7
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added rolling_mean_30
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added rolling_std_7
+[2026-03-02 18:17:29] [INFO] [preprocessing] Adding interaction features...
+[2026-03-02 18:17:29] [INFO] [preprocessing]   Added temp_coal_interaction
+[2026-03-02 18:17:29] [INFO] [preprocessing] Dropped 30 rows with NaN from feature engineering
+[2026-03-02 18:17:29] [INFO] [preprocessing] Processed shape: (1066, 18)
+[2026-03-02 18:17:29] [INFO] [preprocessing] Processed data saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/processed/processed_data.csv
+[2026-03-02 18:17:29] [INFO] [preprocessing] Train set: (746, 18) (2022-01-31 00:00:00 → 2024-02-15 00:00:00)
+[2026-03-02 18:17:29] [INFO] [preprocessing] Val set:   (160, 18) (2024-02-16 00:00:00 → 2024-07-24 00:00:00)
+[2026-03-02 18:17:29] [INFO] [preprocessing] Test set:  (160, 18) (2024-07-25 00:00:00 → 2024-12-31 00:00:00)
+[2026-03-02 18:17:29] [INFO] [preprocessing] Scaler saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/scaler.pkl
+[2026-03-02 18:17:29] [INFO] [preprocessing] Train/val/test CSVs saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/processed
+[2026-03-02 18:17:29] [INFO] [preprocessing] Preprocessing complete.

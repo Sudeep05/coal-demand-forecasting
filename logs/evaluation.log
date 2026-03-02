@@ -1,0 +1,52 @@
+[2026-03-02 18:17:59] [INFO] [evaluation] Starting full model evaluation...
+[2026-03-02 18:17:59] [INFO] [evaluation] ==================================================
+[2026-03-02 18:17:59] [INFO] [evaluation] Generating Model Comparison Table...
+[2026-03-02 18:17:59] [INFO] [evaluation] ==================================================
+[2026-03-02 18:17:59] [INFO] [evaluation] 
+╔══════════════╦════════╦════════╦════════╦════════╦═══════════╦═══════════╗
+║ Model        ║ MAPE % ║ RMSE   ║ MAE    ║ R²     ║ Train (s) ║ Infer(ms) ║
+╠══════════════╬════════╬════════╬════════╬════════╬═══════════╬═══════════╣
+[2026-03-02 18:17:59] [INFO] [evaluation] ║ ARIMA        ║  13.07 ║  35.11 ║  27.75 ║ -0.1036 ║     12.39 ║      2.89 ║
+[2026-03-02 18:17:59] [INFO] [evaluation] ║ Prophet      ║   8.41 ║  27.59 ║  18.95 ║ 0.3186 ║      0.23 ║     29.68 ║
+[2026-03-02 18:17:59] [INFO] [evaluation] ║ LSTM         ║  12.80 ║  34.67 ║  27.31 ║ -0.0757 ║     13.07 ║    173.93 ║
+[2026-03-02 18:17:59] [INFO] [evaluation] ║ XGBoost      ║   6.84 ║  22.56 ║  15.81 ║ 0.5444 ║      3.43 ║      0.22 ║
+[2026-03-02 18:17:59] [INFO] [evaluation] ╚══════════════╩════════╩════════╩════════╩════════╩═══════════╩═══════════╝
+[2026-03-02 18:17:59] [INFO] [evaluation] Targets: MAPE < 8.0%, RMSE < 50.0 tonnes
+[2026-03-02 18:17:59] [INFO] [evaluation]   ARIMA: MAPE ✗ | RMSE ✓
+[2026-03-02 18:17:59] [INFO] [evaluation]   Prophet: MAPE ✗ | RMSE ✓
+[2026-03-02 18:17:59] [INFO] [evaluation]   LSTM: MAPE ✗ | RMSE ✓
+[2026-03-02 18:17:59] [INFO] [evaluation]   XGBoost: MAPE ✓ | RMSE ✓
+[2026-03-02 18:17:59] [INFO] [evaluation] Comparison table saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/model_comparison.csv
+[2026-03-02 18:17:59] [INFO] [evaluation] Best model: XGBoost with MAPE=6.84%
+[2026-03-02 18:17:59] [INFO] [evaluation] Plotting best model forecast...
+[2026-03-02 18:17:59] [INFO] [evaluation] Best model forecast plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/best_model_forecast.png
+[2026-03-02 18:17:59] [INFO] [evaluation] Plotting prediction intervals...
+[2026-03-02 18:17:59] [INFO] [evaluation] Prediction intervals plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/prediction_intervals.png
+[2026-03-02 18:17:59] [INFO] [evaluation] ==================================================
+[2026-03-02 18:17:59] [INFO] [evaluation] Computing Economic Impact...
+[2026-03-02 18:17:59] [INFO] [evaluation] ==================================================
+[2026-03-02 18:17:59] [INFO] [evaluation] 
+╔══════════════════════════════════════════════════════════════════╗
+║                    ECONOMIC IMPACT ANALYSIS                      ║
+╠══════════════════════════════════════════════════════════════════╣
+║                                                                  ║
+║  Excess Inventory Days (test period):        95                   ║
+║  Avg Excess Inventory (tonnes):             13.83                 ║
+║                                                                  ║
+║  HOLDING COST SAVED:                                             ║
+║    Excess × Rs 500/tonne/day × 15% reduction            ║
+║    Annual Savings:               Rs     224,752.60            ║
+║                                                                  ║
+║  SHORTAGE EVENTS:                                                ║
+║    Total shortage risk days:             65                       ║
+║    Events prevented (15%):                 9                       ║
+║    Cost per event: 200 MWh × Rs 8,000/MWh                        ║
+║    Annual Savings:               Rs  32,850,000.00            ║
+║                                                                  ║
+║  ════════════════════════════════════════════════════════════     ║
+║  TOTAL ANNUAL SAVINGS:           Rs  33,074,752.60            ║
+║  ════════════════════════════════════════════════════════════     ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+[2026-03-02 18:17:59] [INFO] [evaluation] Estimated Annual Savings from improved forecasting: Rs 33,074,753

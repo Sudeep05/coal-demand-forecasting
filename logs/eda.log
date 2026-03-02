@@ -1,0 +1,198 @@
+[2026-03-02 18:09:33] [INFO] [eda] ==================================================
+[2026-03-02 18:09:33] [INFO] [eda] Starting Exploratory Data Analysis...
+[2026-03-02 18:09:33] [INFO] [eda] ==================================================
+[2026-03-02 18:09:33] [INFO] [eda] Generating SIPOC diagram...
+[2026-03-02 18:09:33] [INFO] [eda] SIPOC diagram saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/sipoc_diagram.png
+[2026-03-02 18:09:33] [INFO] [eda] Generating Value Chain diagram...
+[2026-03-02 18:09:34] [INFO] [eda] Value chain diagram saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/value_chain.png
+[2026-03-02 18:09:34] [INFO] [eda] Generating trend analysis plot...
+[2026-03-02 18:09:34] [INFO] [eda] Trend analysis plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/trend_analysis.png
+[2026-03-02 18:09:34] [INFO] [eda] Generating seasonality decomposition...
+[2026-03-02 18:09:34] [INFO] [eda] Seasonality decomposition saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/seasonality_decomposition.png
+[2026-03-02 18:09:34] [INFO] [eda] Generating ACF/PACF plots...
+[2026-03-02 18:09:34] [INFO] [eda] ACF/PACF plots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/acf_pacf.png
+[2026-03-02 18:09:34] [INFO] [eda] Generating correlation heatmap...
+[2026-03-02 18:09:34] [INFO] [eda] Correlation heatmap saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/correlation_heatmap.png
+[2026-03-02 18:09:34] [INFO] [eda] Generating outlier boxplots...
+[2026-03-02 18:09:34] [INFO] [eda] Outlier boxplots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/outlier_boxplots.png
+[2026-03-02 18:09:34] [INFO] [eda] Generating Data Issues Report...
+[2026-03-02 18:09:34] [INFO] [eda] ======================================================================
+[2026-03-02 18:09:34] [INFO] [eda] DATA ISSUES REPORT
+[2026-03-02 18:09:34] [INFO] [eda] ======================================================================
+[2026-03-02 18:09:34] [INFO] [eda] Total Rows: 1096
+[2026-03-02 18:09:34] [INFO] [eda] Total Columns: 8
+[2026-03-02 18:09:34] [INFO] [eda] MISSING VALUES:
+[2026-03-02 18:09:34] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:09:34] [INFO] [eda] power_generation_mw: 10 (0.91%)
+[2026-03-02 18:09:34] [INFO] [eda] coal_consumption_tonnes: 10 (0.91%)
+[2026-03-02 18:09:34] [INFO] [eda] temperature_c: 10 (0.91%)
+[2026-03-02 18:09:34] [INFO] [eda] coal_price_inr: 10 (0.91%)
+[2026-03-02 18:09:34] [INFO] [eda] inventory_level_tonnes: 10 (0.91%)
+[2026-03-02 18:09:34] [INFO] [eda] OUTLIERS (IQR Method):
+[2026-03-02 18:09:34] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:09:34] [INFO] [eda] power_generation_mw: 40 outliers (3.68%)
+[2026-03-02 18:09:34] [INFO] [eda] coal_consumption_tonnes: 30 outliers (2.76%)
+[2026-03-02 18:09:34] [INFO] [eda] is_holiday: 42 outliers (3.83%)
+[2026-03-02 18:09:34] [INFO] [eda] STATIONARITY (ADF Test):
+[2026-03-02 18:09:34] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:09:34] [INFO] [eda] Target (coal_consumption_tonnes):
+[2026-03-02 18:09:34] [INFO] [eda] ADF Statistic: -5.3228
+[2026-03-02 18:09:34] [INFO] [eda] p-value: 0.000005
+[2026-03-02 18:09:34] [INFO] [eda] Stationary: YES
+[2026-03-02 18:09:34] [INFO] [eda] SKEWNESS:
+[2026-03-02 18:09:34] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:09:34] [INFO] [eda] coal_consumption_tonnes: 5.3463
+[2026-03-02 18:09:34] [INFO] [eda] → Highly skewed — consider log transformation
+[2026-03-02 18:09:34] [INFO] [eda] RECOMMENDED FIXES:
+[2026-03-02 18:09:34] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:09:34] [INFO] [eda] 1. Forward-fill missing values (time-series appropriate)
+[2026-03-02 18:09:34] [INFO] [eda] 2. Cap outliers at IQR bounds
+[2026-03-02 18:09:34] [INFO] [eda] 3. Add lag features (1, 7, 30 days)
+[2026-03-02 18:09:34] [INFO] [eda] 4. Add rolling statistics (mean, std)
+[2026-03-02 18:09:34] [INFO] [eda] 5. Engineer calendar features (month, quarter, day_of_week)
+[2026-03-02 18:09:34] [INFO] [eda] ======================================================================
+[2026-03-02 18:09:34] [INFO] [eda] EDA complete. 7 plots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/
+[2026-03-02 18:12:47] [INFO] [eda] ==================================================
+[2026-03-02 18:12:47] [INFO] [eda] Starting Exploratory Data Analysis...
+[2026-03-02 18:12:47] [INFO] [eda] ==================================================
+[2026-03-02 18:12:47] [INFO] [eda] Generating SIPOC diagram...
+[2026-03-02 18:12:47] [INFO] [eda] SIPOC diagram saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/sipoc_diagram.png
+[2026-03-02 18:12:47] [INFO] [eda] Generating Value Chain diagram...
+[2026-03-02 18:12:47] [INFO] [eda] Value chain diagram saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/value_chain.png
+[2026-03-02 18:12:47] [INFO] [eda] Generating trend analysis plot...
+[2026-03-02 18:12:48] [INFO] [eda] Trend analysis plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/trend_analysis.png
+[2026-03-02 18:12:48] [INFO] [eda] Generating seasonality decomposition...
+[2026-03-02 18:12:48] [INFO] [eda] Seasonality decomposition saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/seasonality_decomposition.png
+[2026-03-02 18:12:48] [INFO] [eda] Generating ACF/PACF plots...
+[2026-03-02 18:12:48] [INFO] [eda] ACF/PACF plots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/acf_pacf.png
+[2026-03-02 18:12:48] [INFO] [eda] Generating correlation heatmap...
+[2026-03-02 18:12:48] [INFO] [eda] Correlation heatmap saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/correlation_heatmap.png
+[2026-03-02 18:12:48] [INFO] [eda] Generating outlier boxplots...
+[2026-03-02 18:12:48] [INFO] [eda] Outlier boxplots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/outlier_boxplots.png
+[2026-03-02 18:12:48] [INFO] [eda] Generating Data Issues Report...
+[2026-03-02 18:12:48] [INFO] [eda] ======================================================================
+[2026-03-02 18:12:48] [INFO] [eda] DATA ISSUES REPORT
+[2026-03-02 18:12:48] [INFO] [eda] ======================================================================
+[2026-03-02 18:12:48] [INFO] [eda] Total Rows: 1096
+[2026-03-02 18:12:48] [INFO] [eda] Total Columns: 8
+[2026-03-02 18:12:48] [INFO] [eda] MISSING VALUES:
+[2026-03-02 18:12:48] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:12:48] [INFO] [eda] power_generation_mw: 10 (0.91%)
+[2026-03-02 18:12:48] [INFO] [eda] coal_consumption_tonnes: 10 (0.91%)
+[2026-03-02 18:12:48] [INFO] [eda] temperature_c: 10 (0.91%)
+[2026-03-02 18:12:48] [INFO] [eda] coal_price_inr: 10 (0.91%)
+[2026-03-02 18:12:48] [INFO] [eda] inventory_level_tonnes: 10 (0.91%)
+[2026-03-02 18:12:48] [INFO] [eda] OUTLIERS (IQR Method):
+[2026-03-02 18:12:48] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:12:48] [INFO] [eda] power_generation_mw: 42 outliers (3.87%)
+[2026-03-02 18:12:48] [INFO] [eda] coal_consumption_tonnes: 34 outliers (3.13%)
+[2026-03-02 18:12:48] [INFO] [eda] is_holiday: 42 outliers (3.83%)
+[2026-03-02 18:12:48] [INFO] [eda] STATIONARITY (ADF Test):
+[2026-03-02 18:12:48] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:12:48] [INFO] [eda] Target (coal_consumption_tonnes):
+[2026-03-02 18:12:48] [INFO] [eda] ADF Statistic: -5.5547
+[2026-03-02 18:12:48] [INFO] [eda] p-value: 0.000002
+[2026-03-02 18:12:48] [INFO] [eda] Stationary: YES
+[2026-03-02 18:12:48] [INFO] [eda] SKEWNESS:
+[2026-03-02 18:12:48] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:12:48] [INFO] [eda] coal_consumption_tonnes: 5.3642
+[2026-03-02 18:12:48] [INFO] [eda] → Highly skewed — consider log transformation
+[2026-03-02 18:12:48] [INFO] [eda] RECOMMENDED FIXES:
+[2026-03-02 18:12:48] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:12:48] [INFO] [eda] 1. Forward-fill missing values (time-series appropriate)
+[2026-03-02 18:12:48] [INFO] [eda] 2. Cap outliers at IQR bounds
+[2026-03-02 18:12:48] [INFO] [eda] 3. Add lag features (1, 7, 30 days)
+[2026-03-02 18:12:48] [INFO] [eda] 4. Add rolling statistics (mean, std)
+[2026-03-02 18:12:48] [INFO] [eda] 5. Engineer calendar features (month, quarter, day_of_week)
+[2026-03-02 18:12:48] [INFO] [eda] ======================================================================
+[2026-03-02 18:12:48] [INFO] [eda] EDA complete. 7 plots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/
+[2026-03-02 18:17:28] [INFO] [eda] ==================================================
+[2026-03-02 18:17:28] [INFO] [eda] Starting Exploratory Data Analysis...
+[2026-03-02 18:17:28] [INFO] [eda] ==================================================
+[2026-03-02 18:17:28] [INFO] [eda] Generating SIPOC diagram...
+[2026-03-02 18:17:29] [INFO] [eda] SIPOC diagram saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/sipoc_diagram.png
+[2026-03-02 18:17:29] [INFO] [eda] Generating Value Chain diagram...
+[2026-03-02 18:17:29] [INFO] [eda] Value chain diagram saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/value_chain.png
+[2026-03-02 18:17:29] [INFO] [eda] Generating trend analysis plot...
+[2026-03-02 18:17:29] [INFO] [eda] Trend analysis plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/trend_analysis.png
+[2026-03-02 18:17:29] [INFO] [eda] Generating seasonality decomposition...
+[2026-03-02 18:17:29] [INFO] [eda] Seasonality decomposition saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/seasonality_decomposition.png
+[2026-03-02 18:17:29] [INFO] [eda] Generating ACF/PACF plots...
+[2026-03-02 18:17:29] [INFO] [eda] ACF/PACF plots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/acf_pacf.png
+[2026-03-02 18:17:29] [INFO] [eda] Generating correlation heatmap...
+[2026-03-02 18:17:29] [INFO] [eda] Correlation heatmap saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/correlation_heatmap.png
+[2026-03-02 18:17:29] [INFO] [eda] Generating outlier boxplots...
+[2026-03-02 18:17:29] [INFO] [eda] Outlier boxplots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/outlier_boxplots.png
+[2026-03-02 18:17:29] [INFO] [eda] Generating Data Issues Report...
+[2026-03-02 18:17:29] [INFO] [eda] ======================================================================
+[2026-03-02 18:17:29] [INFO] [eda] DATA ISSUES REPORT
+[2026-03-02 18:17:29] [INFO] [eda] ======================================================================
+[2026-03-02 18:17:29] [INFO] [eda] Total Rows: 1096
+[2026-03-02 18:17:29] [INFO] [eda] Total Columns: 8
+[2026-03-02 18:17:29] [INFO] [eda] MISSING VALUES:
+[2026-03-02 18:17:29] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:17:29] [INFO] [eda] power_generation_mw: 10 (0.91%)
+[2026-03-02 18:17:29] [INFO] [eda] coal_consumption_tonnes: 10 (0.91%)
+[2026-03-02 18:17:29] [INFO] [eda] temperature_c: 10 (0.91%)
+[2026-03-02 18:17:29] [INFO] [eda] coal_price_inr: 10 (0.91%)
+[2026-03-02 18:17:29] [INFO] [eda] inventory_level_tonnes: 10 (0.91%)
+[2026-03-02 18:17:29] [INFO] [eda] OUTLIERS (IQR Method):
+[2026-03-02 18:17:29] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:17:29] [INFO] [eda] power_generation_mw: 36 outliers (3.31%)
+[2026-03-02 18:17:29] [INFO] [eda] coal_consumption_tonnes: 26 outliers (2.39%)
+[2026-03-02 18:17:29] [INFO] [eda] is_holiday: 42 outliers (3.83%)
+[2026-03-02 18:17:29] [INFO] [eda] STATIONARITY (ADF Test):
+[2026-03-02 18:17:29] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:17:29] [INFO] [eda] Target (coal_consumption_tonnes):
+[2026-03-02 18:17:29] [INFO] [eda] ADF Statistic: -5.3639
+[2026-03-02 18:17:29] [INFO] [eda] p-value: 0.000004
+[2026-03-02 18:17:29] [INFO] [eda] Stationary: YES
+[2026-03-02 18:17:29] [INFO] [eda] SKEWNESS:
+[2026-03-02 18:17:29] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:17:29] [INFO] [eda] coal_consumption_tonnes: 5.3883
+[2026-03-02 18:17:29] [INFO] [eda] → Highly skewed — consider log transformation
+[2026-03-02 18:17:29] [INFO] [eda] RECOMMENDED FIXES:
+[2026-03-02 18:17:29] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:17:29] [INFO] [eda] 1. Forward-fill missing values (time-series appropriate)
+[2026-03-02 18:17:29] [INFO] [eda] 2. Cap outliers at IQR bounds
+[2026-03-02 18:17:29] [INFO] [eda] 3. Add lag features (1, 7, 30 days)
+[2026-03-02 18:17:29] [INFO] [eda] 4. Add rolling statistics (mean, std)
+[2026-03-02 18:17:29] [INFO] [eda] 5. Engineer calendar features (month, quarter, day_of_week)
+[2026-03-02 18:17:29] [INFO] [eda] ======================================================================
+[2026-03-02 18:17:29] [INFO] [eda] EDA complete. 7 plots saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/
+[2026-03-02 18:27:58] [INFO] [eda] Generating Data Issues Report...
+[2026-03-02 18:27:58] [INFO] [eda] ======================================================================
+[2026-03-02 18:27:58] [INFO] [eda] DATA ISSUES REPORT
+[2026-03-02 18:27:58] [INFO] [eda] ======================================================================
+[2026-03-02 18:27:58] [INFO] [eda] Total Rows: 1096
+[2026-03-02 18:27:58] [INFO] [eda] Total Columns: 8
+[2026-03-02 18:27:58] [INFO] [eda] MISSING VALUES:
+[2026-03-02 18:27:58] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:27:58] [INFO] [eda] power_generation_mw: 10 (0.91%)
+[2026-03-02 18:27:58] [INFO] [eda] coal_consumption_tonnes: 10 (0.91%)
+[2026-03-02 18:27:58] [INFO] [eda] temperature_c: 10 (0.91%)
+[2026-03-02 18:27:58] [INFO] [eda] coal_price_inr: 10 (0.91%)
+[2026-03-02 18:27:58] [INFO] [eda] inventory_level_tonnes: 10 (0.91%)
+[2026-03-02 18:27:58] [INFO] [eda] OUTLIERS (IQR Method):
+[2026-03-02 18:27:58] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:27:58] [INFO] [eda] power_generation_mw: 45 outliers (4.14%)
+[2026-03-02 18:27:58] [INFO] [eda] coal_consumption_tonnes: 29 outliers (2.67%)
+[2026-03-02 18:27:58] [INFO] [eda] is_holiday: 42 outliers (3.83%)
+[2026-03-02 18:27:58] [INFO] [eda] STATIONARITY (ADF Test):
+[2026-03-02 18:27:58] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:27:58] [INFO] [eda] Target (coal_consumption_tonnes):
+[2026-03-02 18:27:58] [INFO] [eda] ADF Statistic: -5.4192
+[2026-03-02 18:27:58] [INFO] [eda] p-value: 0.000003
+[2026-03-02 18:27:58] [INFO] [eda] Stationary: YES
+[2026-03-02 18:27:58] [INFO] [eda] SKEWNESS:
+[2026-03-02 18:27:58] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:27:58] [INFO] [eda] coal_consumption_tonnes: 5.3520
+[2026-03-02 18:27:58] [INFO] [eda] → Highly skewed — consider log transformation
+[2026-03-02 18:27:58] [INFO] [eda] RECOMMENDED FIXES:
+[2026-03-02 18:27:58] [INFO] [eda] ----------------------------------------
+[2026-03-02 18:27:58] [INFO] [eda] 1. Forward-fill missing values (time-series appropriate)
+[2026-03-02 18:27:58] [INFO] [eda] 2. Cap outliers at IQR bounds
+[2026-03-02 18:27:58] [INFO] [eda] 3. Add lag features (1, 7, 30 days)
+[2026-03-02 18:27:58] [INFO] [eda] 4. Add rolling statistics (mean, std)
+[2026-03-02 18:27:58] [INFO] [eda] 5. Engineer calendar features (month, quarter, day_of_week)
+[2026-03-02 18:27:58] [INFO] [eda] ======================================================================

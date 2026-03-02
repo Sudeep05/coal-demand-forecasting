@@ -1,0 +1,376 @@
+[2026-03-02 18:09:34] [INFO] [training] ==================================================
+[2026-03-02 18:09:34] [INFO] [training] Training ARIMA model...
+[2026-03-02 18:09:34] [INFO] [training] ==================================================
+[2026-03-02 18:09:42] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:09:42] [INFO] [training] Running auto_arima (this may take a few minutes)...
+[2026-03-02 18:10:13] [INFO] [training] Selected ARIMA order: (1, 0, 0)
+[2026-03-02 18:10:13] [INFO] [training] Selected seasonal order: (1, 0, 0, 12)
+[2026-03-02 18:10:13] [INFO] [training] AIC: 8826.87
+[2026-03-02 18:10:13] [INFO] [training] ARIMA model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/arima_model.pkl
+[2026-03-02 18:10:13] [INFO] [training] ARIMA training completed in 38.74s
+[2026-03-02 18:10:13] [INFO] [training] ARIMA inference time: 3.78ms for 160 samples
+[2026-03-02 18:10:13] [INFO] [training] ==================================================
+[2026-03-02 18:10:13] [INFO] [training] Training Prophet model...
+[2026-03-02 18:10:13] [INFO] [training] ==================================================
+[2026-03-02 18:10:13] [ERROR] [training] Prophet training failed: No module named 'prophet'
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/src/../src/models/prophet_model.py", line 83, in train_prophet
+    from prophet import Prophet  # type: ignore[import-untyped]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'prophet'
+[2026-03-02 18:10:13] [INFO] [training] ==================================================
+[2026-03-02 18:10:13] [INFO] [training] Training LSTM model...
+[2026-03-02 18:10:13] [INFO] [training] ==================================================
+[2026-03-02 18:12:48] [INFO] [training] ==================================================
+[2026-03-02 18:12:48] [INFO] [training] Training ARIMA model...
+[2026-03-02 18:12:48] [INFO] [training] ==================================================
+[2026-03-02 18:12:49] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:12:49] [INFO] [training] Running auto_arima (this may take a few minutes)...
+[2026-03-02 18:13:00] [INFO] [training] Selected ARIMA order: (1, 0, 0)
+[2026-03-02 18:13:00] [INFO] [training] Selected seasonal order: (1, 0, 0, 12)
+[2026-03-02 18:13:00] [INFO] [training] AIC: 8812.91
+[2026-03-02 18:13:00] [INFO] [training] ARIMA model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/arima_model.pkl
+[2026-03-02 18:13:00] [INFO] [training] ARIMA training completed in 12.14s
+[2026-03-02 18:13:00] [INFO] [training] ARIMA inference time: 3.73ms for 160 samples
+[2026-03-02 18:13:00] [INFO] [training] ==================================================
+[2026-03-02 18:13:00] [INFO] [training] Training Prophet model...
+[2026-03-02 18:13:00] [INFO] [training] ==================================================
+[2026-03-02 18:13:00] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:13:01] [INFO] [training] Prophet forecast plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/prophet_forecast.png
+[2026-03-02 18:13:01] [INFO] [training] Prophet model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/prophet_model.pkl
+[2026-03-02 18:13:01] [INFO] [training] Prophet training completed in 0.66s
+[2026-03-02 18:13:01] [INFO] [training] Prophet inference time: 33.71ms for 160 samples
+[2026-03-02 18:13:01] [INFO] [training] ==================================================
+[2026-03-02 18:13:01] [INFO] [training] Training LSTM model...
+[2026-03-02 18:13:01] [INFO] [training] ==================================================
+[2026-03-02 18:17:29] [INFO] [training] ==================================================
+[2026-03-02 18:17:29] [INFO] [training] Training ARIMA model...
+[2026-03-02 18:17:29] [INFO] [training] ==================================================
+[2026-03-02 18:17:30] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:17:30] [INFO] [training] Running auto_arima (this may take a few minutes)...
+[2026-03-02 18:17:42] [INFO] [training] Selected ARIMA order: (1, 0, 0)
+[2026-03-02 18:17:42] [INFO] [training] Selected seasonal order: (1, 0, 0, 12)
+[2026-03-02 18:17:42] [INFO] [training] AIC: 8801.13
+[2026-03-02 18:17:42] [INFO] [training] ARIMA model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/arima_model.pkl
+[2026-03-02 18:17:42] [INFO] [training] ARIMA training completed in 12.39s
+[2026-03-02 18:17:42] [INFO] [training] ARIMA inference time: 2.89ms for 160 samples
+[2026-03-02 18:17:42] [INFO] [training] ==================================================
+[2026-03-02 18:17:42] [INFO] [training] Training Prophet model...
+[2026-03-02 18:17:42] [INFO] [training] ==================================================
+[2026-03-02 18:17:42] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:17:42] [INFO] [training] Prophet forecast plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/prophet_forecast.png
+[2026-03-02 18:17:42] [INFO] [training] Prophet model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/prophet_model.pkl
+[2026-03-02 18:17:42] [INFO] [training] Prophet training completed in 0.23s
+[2026-03-02 18:17:42] [INFO] [training] Prophet inference time: 29.68ms for 160 samples
+[2026-03-02 18:17:42] [INFO] [training] ==================================================
+[2026-03-02 18:17:42] [INFO] [training] Training LSTM model (PyTorch)...
+[2026-03-02 18:17:42] [INFO] [training] Device: mps
+[2026-03-02 18:17:42] [INFO] [training] ==================================================
+[2026-03-02 18:17:42] [INFO] [training] LSTM input shape: (796, 30, 16)
+[2026-03-02 18:17:42] [INFO] [training] Sequence length: 30
+[2026-03-02 18:17:42] [INFO] [training] Features: 16
+[2026-03-02 18:17:42] [INFO] [training] Hyperparameters: layers=[128, 64], dropout=0.2, epochs=100, batch_size=32
+[2026-03-02 18:17:42] [INFO] [training] Model architecture:
+CoalLSTM(
+  (lstm1): LSTM(16, 128, batch_first=True)
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (lstm2): LSTM(128, 64, batch_first=True)
+  (dropout2): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=64, out_features=32, bias=True)
+  (relu): ReLU()
+  (fc_out): Linear(in_features=32, out_features=1, bias=True)
+)
+[2026-03-02 18:17:42] [INFO] [training] Total parameters: 126,529
+[2026-03-02 18:17:45] [INFO] [training] Epoch   1/100  train_loss=57291.6853  val_loss=63749.5078  patience=0/10
+[2026-03-02 18:17:47] [INFO] [training] Epoch  10/100  train_loss=17211.7218  val_loss=18330.8092  patience=0/10
+[2026-03-02 18:17:49] [INFO] [training] Epoch  20/100  train_loss=1324.8018  val_loss=1204.4332  patience=0/10
+[2026-03-02 18:17:51] [INFO] [training] Epoch  30/100  train_loss=1313.9755  val_loss=990.9546  patience=2/10
+[2026-03-02 18:17:54] [INFO] [training] Epoch  40/100  train_loss=1342.2227  val_loss=973.1246  patience=4/10
+[2026-03-02 18:17:55] [INFO] [training] Early stopping at epoch 46
+[2026-03-02 18:17:55] [INFO] [training] Restored best model checkpoint
+[2026-03-02 18:17:55] [INFO] [training] LSTM loss curve saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/lstm_loss.png
+[2026-03-02 18:17:55] [INFO] [training] LSTM training completed in 13.07s
+[2026-03-02 18:17:55] [INFO] [training] LSTM inference time: 173.93ms for 160 samples
+[2026-03-02 18:17:55] [INFO] [training] ==================================================
+[2026-03-02 18:17:55] [INFO] [training] Training XGBoost model...
+[2026-03-02 18:17:55] [INFO] [training] ==================================================
+[2026-03-02 18:17:55] [INFO] [training] Training samples: 746, Val: 160, Test: 160
+[2026-03-02 18:17:55] [INFO] [training] Features: 16
+[2026-03-02 18:17:55] [INFO] [training] Feature names: ['power_generation_mw', 'temperature_c', 'coal_price_inr', 'inventory_level_tonnes', 'is_holiday', 'is_weekend', 'month', 'quarter', 'day_of_week', 'lag_1', 'lag_7', 'lag_30', 'rolling_mean_7', 'rolling_mean_30', 'rolling_std_7', 'temp_coal_interaction']
+[2026-03-02 18:17:55] [INFO] [training] Starting Optuna hyperparameter tuning (50 trials)...
+[2026-03-02 18:17:59] [INFO] [training] Best hyperparameters: {'n_estimators': 104, 'max_depth': 3, 'learning_rate': 0.0306722931737653, 'subsample': 0.8464380783184137, 'colsample_bytree': 0.616441866802263, 'min_child_weight': 7, 'reg_alpha': 0.0196565233457972, 'reg_lambda': 0.019912770943681032, 'gamma': 0.5594553371178039}
+[2026-03-02 18:17:59] [INFO] [training] Best validation RMSE: 16.0226
+[2026-03-02 18:17:59] [INFO] [training] Feature importance plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/xgb_feature_importance.png
+[2026-03-02 18:17:59] [INFO] [training] XGBoost model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 18:17:59] [INFO] [training] XGBoost training completed in 3.43s
+[2026-03-02 18:17:59] [INFO] [training] XGBoost inference time: 0.22ms for 160 samples
+[2026-03-02 18:43:28] [INFO] [training] ==================================================
+[2026-03-02 18:43:28] [INFO] [training] Training ARIMA model...
+[2026-03-02 18:43:28] [INFO] [training] ==================================================
+[2026-03-02 18:43:29] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:43:29] [INFO] [training] Running auto_arima (this may take a few minutes)...
+[2026-03-02 18:43:41] [INFO] [training] Selected ARIMA order: (1, 0, 0)
+[2026-03-02 18:43:41] [INFO] [training] Selected seasonal order: (1, 0, 0, 12)
+[2026-03-02 18:43:41] [INFO] [training] AIC: 8801.13
+[2026-03-02 18:43:41] [INFO] [training] ARIMA model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/arima_model.pkl
+[2026-03-02 18:43:41] [INFO] [training] ARIMA training completed in 12.59s
+[2026-03-02 18:43:41] [INFO] [training] ARIMA inference time: 5.14ms for 160 samples
+[2026-03-02 18:43:41] [INFO] [training] ==================================================
+[2026-03-02 18:43:41] [INFO] [training] Training Prophet model...
+[2026-03-02 18:43:41] [INFO] [training] ==================================================
+[2026-03-02 18:43:41] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:43:41] [INFO] [training] Prophet forecast plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/prophet_forecast.png
+[2026-03-02 18:43:41] [INFO] [training] Prophet model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/prophet_model.pkl
+[2026-03-02 18:43:41] [INFO] [training] Prophet training completed in 0.21s
+[2026-03-02 18:43:41] [INFO] [training] Prophet inference time: 29.07ms for 160 samples
+[2026-03-02 18:43:42] [INFO] [training] ==================================================
+[2026-03-02 18:43:42] [INFO] [training] Training LSTM model (PyTorch)...
+[2026-03-02 18:43:42] [INFO] [training] Device: mps
+[2026-03-02 18:43:42] [INFO] [training] ==================================================
+[2026-03-02 18:43:42] [INFO] [training] LSTM input shape: (796, 30, 16)
+[2026-03-02 18:43:42] [INFO] [training] Sequence length: 30
+[2026-03-02 18:43:42] [INFO] [training] Features: 16
+[2026-03-02 18:43:42] [INFO] [training] Hyperparameters: layers=[128, 64], dropout=0.2, epochs=100, batch_size=32
+[2026-03-02 18:43:42] [INFO] [training] Model architecture:
+CoalLSTM(
+  (lstm1): LSTM(16, 128, batch_first=True)
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (lstm2): LSTM(128, 64, batch_first=True)
+  (dropout2): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=64, out_features=32, bias=True)
+  (relu): ReLU()
+  (fc_out): Linear(in_features=32, out_features=1, bias=True)
+)
+[2026-03-02 18:43:42] [INFO] [training] Total parameters: 126,529
+[2026-03-02 18:43:43] [INFO] [training] Epoch   1/100  train_loss=57291.6853  val_loss=63749.5078  patience=0/10
+[2026-03-02 18:43:45] [INFO] [training] Epoch  10/100  train_loss=17211.7218  val_loss=18330.8092  patience=0/10
+[2026-03-02 18:43:47] [INFO] [training] Epoch  20/100  train_loss=1324.8018  val_loss=1204.4332  patience=0/10
+[2026-03-02 18:43:49] [INFO] [training] Epoch  30/100  train_loss=1313.9755  val_loss=990.9546  patience=2/10
+[2026-03-02 18:43:52] [INFO] [training] Epoch  40/100  train_loss=1342.2227  val_loss=973.1246  patience=4/10
+[2026-03-02 18:43:53] [INFO] [training] Early stopping at epoch 46
+[2026-03-02 18:43:53] [INFO] [training] Restored best model checkpoint
+[2026-03-02 18:43:53] [INFO] [training] LSTM loss curve saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/lstm_loss.png
+[2026-03-02 18:43:53] [INFO] [training] LSTM training completed in 11.39s
+[2026-03-02 18:43:53] [INFO] [training] LSTM inference time: 14.74ms for 160 samples
+[2026-03-02 18:43:53] [INFO] [training] ==================================================
+[2026-03-02 18:43:53] [INFO] [training] Training XGBoost model...
+[2026-03-02 18:43:53] [INFO] [training] ==================================================
+[2026-03-02 18:43:53] [INFO] [training] Training samples: 746, Val: 160, Test: 160
+[2026-03-02 18:43:53] [INFO] [training] Features: 16
+[2026-03-02 18:43:53] [INFO] [training] Feature names: ['power_generation_mw', 'temperature_c', 'coal_price_inr', 'inventory_level_tonnes', 'is_holiday', 'is_weekend', 'month', 'quarter', 'day_of_week', 'lag_1', 'lag_7', 'lag_30', 'rolling_mean_7', 'rolling_mean_30', 'rolling_std_7', 'temp_coal_interaction']
+[2026-03-02 18:43:53] [INFO] [training] Starting Optuna hyperparameter tuning (50 trials)...
+[2026-03-02 18:43:57] [INFO] [training] Best hyperparameters: {'n_estimators': 103, 'max_depth': 3, 'learning_rate': 0.028716935675250705, 'subsample': 0.844823789631363, 'colsample_bytree': 0.6081396151435537, 'min_child_weight': 10, 'reg_alpha': 0.6883705906961372, 'reg_lambda': 0.0005643532895803538, 'gamma': 0.00011009398359477082}
+[2026-03-02 18:43:57] [INFO] [training] Best validation RMSE: 16.1200
+[2026-03-02 18:43:57] [INFO] [training] Feature importance plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/xgb_feature_importance.png
+[2026-03-02 18:43:57] [INFO] [training] XGBoost model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 18:43:57] [INFO] [training] XGBoost training completed in 3.35s
+[2026-03-02 18:43:57] [INFO] [training] XGBoost inference time: 0.19ms for 160 samples
+[2026-03-02 18:44:10] [INFO] [training] ==================================================
+[2026-03-02 18:44:10] [INFO] [training] Training ARIMA model...
+[2026-03-02 18:44:10] [INFO] [training] ==================================================
+[2026-03-02 18:44:10] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:44:10] [INFO] [training] Running auto_arima (this may take a few minutes)...
+[2026-03-02 18:44:22] [INFO] [training] Selected ARIMA order: (1, 0, 0)
+[2026-03-02 18:44:22] [INFO] [training] Selected seasonal order: (1, 0, 0, 12)
+[2026-03-02 18:44:22] [INFO] [training] AIC: 8801.13
+[2026-03-02 18:44:22] [INFO] [training] ARIMA model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/arima_model.pkl
+[2026-03-02 18:44:22] [INFO] [training] ARIMA training completed in 12.20s
+[2026-03-02 18:44:22] [INFO] [training] ARIMA inference time: 5.02ms for 160 samples
+[2026-03-02 18:44:22] [INFO] [training] ==================================================
+[2026-03-02 18:44:22] [INFO] [training] Training Prophet model...
+[2026-03-02 18:44:22] [INFO] [training] ==================================================
+[2026-03-02 18:44:22] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 18:44:22] [INFO] [training] Prophet forecast plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/prophet_forecast.png
+[2026-03-02 18:44:22] [INFO] [training] Prophet model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/prophet_model.pkl
+[2026-03-02 18:44:22] [INFO] [training] Prophet training completed in 0.21s
+[2026-03-02 18:44:22] [INFO] [training] Prophet inference time: 28.70ms for 160 samples
+[2026-03-02 18:44:22] [INFO] [training] ==================================================
+[2026-03-02 18:44:22] [INFO] [training] Training LSTM model (PyTorch)...
+[2026-03-02 18:44:22] [INFO] [training] Device: mps
+[2026-03-02 18:44:22] [INFO] [training] ==================================================
+[2026-03-02 18:44:22] [INFO] [training] LSTM input shape: (796, 30, 16)
+[2026-03-02 18:44:22] [INFO] [training] Sequence length: 30
+[2026-03-02 18:44:22] [INFO] [training] Features: 16
+[2026-03-02 18:44:22] [INFO] [training] Hyperparameters: layers=[128, 64], dropout=0.2, epochs=100, batch_size=32
+[2026-03-02 18:44:22] [INFO] [training] Model architecture:
+CoalLSTM(
+  (lstm1): LSTM(16, 128, batch_first=True)
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (lstm2): LSTM(128, 64, batch_first=True)
+  (dropout2): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=64, out_features=32, bias=True)
+  (relu): ReLU()
+  (fc_out): Linear(in_features=32, out_features=1, bias=True)
+)
+[2026-03-02 18:44:22] [INFO] [training] Total parameters: 126,529
+[2026-03-02 18:44:23] [INFO] [training] Epoch   1/100  train_loss=57291.6853  val_loss=63749.5078  patience=0/10
+[2026-03-02 18:44:25] [INFO] [training] Epoch  10/100  train_loss=17211.7218  val_loss=18330.8092  patience=0/10
+[2026-03-02 18:44:27] [INFO] [training] Epoch  20/100  train_loss=1324.8018  val_loss=1204.4332  patience=0/10
+[2026-03-02 18:44:30] [INFO] [training] Epoch  30/100  train_loss=1313.9755  val_loss=990.9546  patience=2/10
+[2026-03-02 18:44:32] [INFO] [training] Epoch  40/100  train_loss=1342.2227  val_loss=973.1246  patience=4/10
+[2026-03-02 18:44:33] [INFO] [training] Early stopping at epoch 46
+[2026-03-02 18:44:33] [INFO] [training] Restored best model checkpoint
+[2026-03-02 18:44:33] [INFO] [training] LSTM loss curve saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/lstm_loss.png
+[2026-03-02 18:44:33] [INFO] [training] LSTM training completed in 11.11s
+[2026-03-02 18:44:33] [INFO] [training] LSTM inference time: 14.50ms for 160 samples
+[2026-03-02 18:44:33] [INFO] [training] ==================================================
+[2026-03-02 18:44:33] [INFO] [training] Training XGBoost model...
+[2026-03-02 18:44:33] [INFO] [training] ==================================================
+[2026-03-02 18:44:33] [INFO] [training] Training samples: 746, Val: 160, Test: 160
+[2026-03-02 18:44:33] [INFO] [training] Features: 16
+[2026-03-02 18:44:33] [INFO] [training] Feature names: ['power_generation_mw', 'temperature_c', 'coal_price_inr', 'inventory_level_tonnes', 'is_holiday', 'is_weekend', 'month', 'quarter', 'day_of_week', 'lag_1', 'lag_7', 'lag_30', 'rolling_mean_7', 'rolling_mean_30', 'rolling_std_7', 'temp_coal_interaction']
+[2026-03-02 18:44:33] [INFO] [training] Starting Optuna hyperparameter tuning (50 trials)...
+[2026-03-02 18:44:37] [INFO] [training] Best hyperparameters: {'n_estimators': 201, 'max_depth': 3, 'learning_rate': 0.012381714675298583, 'subsample': 0.7225665970806242, 'colsample_bytree': 0.7829518487228253, 'min_child_weight': 8, 'reg_alpha': 0.076857797584854, 'reg_lambda': 3.605016516094205, 'gamma': 4.878868695064502e-06}
+[2026-03-02 18:44:37] [INFO] [training] Best validation RMSE: 16.3591
+[2026-03-02 18:44:38] [INFO] [training] Feature importance plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/xgb_feature_importance.png
+[2026-03-02 18:44:38] [INFO] [training] XGBoost model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 18:44:38] [INFO] [training] XGBoost training completed in 4.10s
+[2026-03-02 18:44:38] [INFO] [training] XGBoost inference time: 0.21ms for 160 samples
+[2026-03-02 18:50:14] [INFO] [training] ==================================================
+[2026-03-02 18:50:14] [INFO] [training] Training XGBoost model...
+[2026-03-02 18:50:14] [INFO] [training] ==================================================
+[2026-03-02 18:50:14] [INFO] [training] Training samples: 746, Val: 160, Test: 160
+[2026-03-02 18:50:14] [INFO] [training] Features: 16
+[2026-03-02 18:50:14] [INFO] [training] Feature names: ['power_generation_mw', 'temperature_c', 'coal_price_inr', 'inventory_level_tonnes', 'is_holiday', 'is_weekend', 'month', 'quarter', 'day_of_week', 'lag_1', 'lag_7', 'lag_30', 'rolling_mean_7', 'rolling_mean_30', 'rolling_std_7', 'temp_coal_interaction']
+[2026-03-02 18:50:14] [INFO] [training] Starting Optuna hyperparameter tuning (50 trials)...
+[2026-03-02 18:50:20] [INFO] [training] Best hyperparameters: {'n_estimators': 199, 'max_depth': 3, 'learning_rate': 0.01080311343020933, 'subsample': 0.753193483590417, 'colsample_bytree': 0.7402125718069331, 'min_child_weight': 1, 'reg_alpha': 0.002469898757320797, 'reg_lambda': 1.347836212084674e-05, 'gamma': 1.973976197056073e-07}
+[2026-03-02 18:50:20] [INFO] [training] Best validation RMSE: 16.0104
+[2026-03-02 18:50:20] [INFO] [training] Feature importance plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/xgb_feature_importance.png
+[2026-03-02 18:50:20] [INFO] [training] XGBoost model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 18:50:20] [INFO] [training] XGBoost training completed in 6.13s
+[2026-03-02 18:50:20] [INFO] [training] XGBoost inference time: 0.34ms for 160 samples
+[2026-03-02 19:22:08] [INFO] [training] ==================================================
+[2026-03-02 19:22:08] [INFO] [training] Training ARIMA model...
+[2026-03-02 19:22:08] [INFO] [training] ==================================================
+[2026-03-02 19:22:09] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 19:22:09] [INFO] [training] Running auto_arima (this may take a few minutes)...
+[2026-03-02 19:22:20] [INFO] [training] Selected ARIMA order: (1, 0, 0)
+[2026-03-02 19:22:20] [INFO] [training] Selected seasonal order: (0, 0, 1, 12)
+[2026-03-02 19:22:20] [INFO] [training] AIC: 8781.53
+[2026-03-02 19:22:20] [INFO] [training] ARIMA model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/arima_model.pkl
+[2026-03-02 19:22:20] [INFO] [training] ARIMA training completed in 12.09s
+[2026-03-02 19:22:20] [INFO] [training] ARIMA inference time: 3.91ms for 160 samples
+[2026-03-02 19:22:20] [INFO] [training] ==================================================
+[2026-03-02 19:22:20] [INFO] [training] Training Prophet model...
+[2026-03-02 19:22:20] [INFO] [training] ==================================================
+[2026-03-02 19:22:20] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 19:22:20] [INFO] [training] Prophet forecast plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/prophet_forecast.png
+[2026-03-02 19:22:20] [INFO] [training] Prophet model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/prophet_model.pkl
+[2026-03-02 19:22:20] [INFO] [training] Prophet training completed in 0.22s
+[2026-03-02 19:22:20] [INFO] [training] Prophet inference time: 28.09ms for 160 samples
+[2026-03-02 19:22:21] [INFO] [training] ==================================================
+[2026-03-02 19:22:21] [INFO] [training] Training LSTM model (PyTorch)...
+[2026-03-02 19:22:21] [INFO] [training] Device: mps
+[2026-03-02 19:22:21] [INFO] [training] ==================================================
+[2026-03-02 19:22:21] [INFO] [training] LSTM input shape: (796, 30, 16)
+[2026-03-02 19:22:21] [INFO] [training] Sequence length: 30
+[2026-03-02 19:22:21] [INFO] [training] Features: 16
+[2026-03-02 19:22:21] [INFO] [training] Hyperparameters: layers=[128, 64], dropout=0.2, epochs=100, batch_size=32
+[2026-03-02 19:22:21] [INFO] [training] Model architecture:
+CoalLSTM(
+  (lstm1): LSTM(16, 128, batch_first=True)
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (lstm2): LSTM(128, 64, batch_first=True)
+  (dropout2): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=64, out_features=32, bias=True)
+  (relu): ReLU()
+  (fc_out): Linear(in_features=32, out_features=1, bias=True)
+)
+[2026-03-02 19:22:21] [INFO] [training] Total parameters: 126,529
+[2026-03-02 19:22:22] [INFO] [training] Epoch   1/100  train_loss=57336.1934  val_loss=63360.8815  patience=0/10
+[2026-03-02 19:22:24] [INFO] [training] Epoch  10/100  train_loss=17221.5799  val_loss=18136.7012  patience=0/10
+[2026-03-02 19:22:26] [INFO] [training] Epoch  20/100  train_loss=1297.5726  val_loss=1194.6140  patience=0/10
+[2026-03-02 19:22:28] [INFO] [training] Epoch  30/100  train_loss=1261.8992  val_loss=990.3525  patience=2/10
+[2026-03-02 19:22:30] [INFO] [training] Epoch  40/100  train_loss=1304.2814  val_loss=976.6628  patience=4/10
+[2026-03-02 19:22:32] [INFO] [training] Early stopping at epoch 46
+[2026-03-02 19:22:32] [INFO] [training] Restored best model checkpoint
+[2026-03-02 19:22:32] [INFO] [training] LSTM loss curve saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/lstm_loss.png
+[2026-03-02 19:22:32] [INFO] [training] LSTM training completed in 10.71s
+[2026-03-02 19:22:32] [INFO] [training] LSTM inference time: 14.20ms for 160 samples
+[2026-03-02 19:22:32] [INFO] [training] ==================================================
+[2026-03-02 19:22:32] [INFO] [training] Training XGBoost model...
+[2026-03-02 19:22:32] [INFO] [training] ==================================================
+[2026-03-02 19:22:32] [INFO] [training] Training samples: 746, Val: 160, Test: 160
+[2026-03-02 19:22:32] [INFO] [training] Features: 16
+[2026-03-02 19:22:32] [INFO] [training] Feature names: ['power_generation_mw', 'temperature_c', 'coal_price_inr', 'inventory_level_tonnes', 'is_holiday', 'is_weekend', 'month', 'quarter', 'day_of_week', 'lag_1', 'lag_7', 'lag_30', 'rolling_mean_7', 'rolling_mean_30', 'rolling_std_7', 'temp_coal_interaction']
+[2026-03-02 19:22:32] [INFO] [training] Starting Optuna hyperparameter tuning (50 trials)...
+[2026-03-02 19:22:36] [INFO] [training] Best hyperparameters: {'n_estimators': 220, 'max_depth': 5, 'learning_rate': 0.011521851879629728, 'subsample': 0.807064123389501, 'colsample_bytree': 0.8256310076724106, 'min_child_weight': 8, 'reg_alpha': 5.004862439550945e-05, 'reg_lambda': 5.643280636110804e-08, 'gamma': 0.009385977450476254}
+[2026-03-02 19:22:36] [INFO] [training] Best validation RMSE: 17.0005
+[2026-03-02 19:22:36] [INFO] [training] Feature importance plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/xgb_feature_importance.png
+[2026-03-02 19:22:36] [INFO] [training] XGBoost model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 19:22:36] [INFO] [training] XGBoost training completed in 4.09s
+[2026-03-02 19:22:36] [INFO] [training] XGBoost inference time: 0.28ms for 160 samples
+[2026-03-02 19:22:51] [INFO] [training] ==================================================
+[2026-03-02 19:22:51] [INFO] [training] Training ARIMA model...
+[2026-03-02 19:22:51] [INFO] [training] ==================================================
+[2026-03-02 19:22:51] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 19:22:51] [INFO] [training] Running auto_arima (this may take a few minutes)...
+[2026-03-02 19:23:01] [INFO] [training] Selected ARIMA order: (1, 0, 0)
+[2026-03-02 19:23:01] [INFO] [training] Selected seasonal order: (0, 0, 1, 12)
+[2026-03-02 19:23:01] [INFO] [training] AIC: 8781.53
+[2026-03-02 19:23:01] [INFO] [training] ARIMA model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/arima_model.pkl
+[2026-03-02 19:23:01] [INFO] [training] ARIMA training completed in 9.89s
+[2026-03-02 19:23:01] [INFO] [training] ARIMA inference time: 5.84ms for 160 samples
+[2026-03-02 19:23:01] [INFO] [training] ==================================================
+[2026-03-02 19:23:01] [INFO] [training] Training Prophet model...
+[2026-03-02 19:23:01] [INFO] [training] ==================================================
+[2026-03-02 19:23:01] [INFO] [training] Training samples: 906, Test samples: 160
+[2026-03-02 19:23:01] [INFO] [training] Prophet forecast plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/prophet_forecast.png
+[2026-03-02 19:23:01] [INFO] [training] Prophet model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/prophet_model.pkl
+[2026-03-02 19:23:01] [INFO] [training] Prophet training completed in 0.20s
+[2026-03-02 19:23:01] [INFO] [training] Prophet inference time: 27.09ms for 160 samples
+[2026-03-02 19:23:01] [INFO] [training] ==================================================
+[2026-03-02 19:23:01] [INFO] [training] Training LSTM model (PyTorch)...
+[2026-03-02 19:23:01] [INFO] [training] Device: mps
+[2026-03-02 19:23:01] [INFO] [training] ==================================================
+[2026-03-02 19:23:01] [INFO] [training] LSTM input shape: (796, 30, 16)
+[2026-03-02 19:23:01] [INFO] [training] Sequence length: 30
+[2026-03-02 19:23:01] [INFO] [training] Features: 16
+[2026-03-02 19:23:01] [INFO] [training] Hyperparameters: layers=[128, 64], dropout=0.2, epochs=100, batch_size=32
+[2026-03-02 19:23:01] [INFO] [training] Model architecture:
+CoalLSTM(
+  (lstm1): LSTM(16, 128, batch_first=True)
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (lstm2): LSTM(128, 64, batch_first=True)
+  (dropout2): Dropout(p=0.2, inplace=False)
+  (fc1): Linear(in_features=64, out_features=32, bias=True)
+  (relu): ReLU()
+  (fc_out): Linear(in_features=32, out_features=1, bias=True)
+)
+[2026-03-02 19:23:01] [INFO] [training] Total parameters: 126,529
+[2026-03-02 19:23:02] [INFO] [training] Epoch   1/100  train_loss=57336.1934  val_loss=63360.8815  patience=0/10
+[2026-03-02 19:23:04] [INFO] [training] Epoch  10/100  train_loss=17221.5799  val_loss=18136.7012  patience=0/10
+[2026-03-02 19:23:07] [INFO] [training] Epoch  20/100  train_loss=1297.5726  val_loss=1194.6140  patience=0/10
+[2026-03-02 19:23:09] [INFO] [training] Epoch  30/100  train_loss=1261.8992  val_loss=990.3525  patience=2/10
+[2026-03-02 19:23:11] [INFO] [training] Epoch  40/100  train_loss=1304.2814  val_loss=976.6628  patience=4/10
+[2026-03-02 19:23:13] [INFO] [training] Early stopping at epoch 46
+[2026-03-02 19:23:13] [INFO] [training] Restored best model checkpoint
+[2026-03-02 19:23:13] [INFO] [training] LSTM loss curve saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/lstm_loss.png
+[2026-03-02 19:23:13] [INFO] [training] LSTM training completed in 11.54s
+[2026-03-02 19:23:13] [INFO] [training] LSTM inference time: 14.20ms for 160 samples
+[2026-03-02 19:23:13] [INFO] [training] ==================================================
+[2026-03-02 19:23:13] [INFO] [training] Training XGBoost model...
+[2026-03-02 19:23:13] [INFO] [training] ==================================================
+[2026-03-02 19:23:13] [INFO] [training] Training samples: 746, Val: 160, Test: 160
+[2026-03-02 19:23:13] [INFO] [training] Features: 16
+[2026-03-02 19:23:13] [INFO] [training] Feature names: ['power_generation_mw', 'temperature_c', 'coal_price_inr', 'inventory_level_tonnes', 'is_holiday', 'is_weekend', 'month', 'quarter', 'day_of_week', 'lag_1', 'lag_7', 'lag_30', 'rolling_mean_7', 'rolling_mean_30', 'rolling_std_7', 'temp_coal_interaction']
+[2026-03-02 19:23:13] [INFO] [training] Starting Optuna hyperparameter tuning (50 trials)...
+[2026-03-02 19:23:17] [INFO] [training] Best hyperparameters: {'n_estimators': 208, 'max_depth': 3, 'learning_rate': 0.018740563091037183, 'subsample': 0.9377620636442049, 'colsample_bytree': 0.619934866438705, 'min_child_weight': 3, 'reg_alpha': 3.5916513314271926e-06, 'reg_lambda': 4.409827556368334e-06, 'gamma': 0.0005107580373108681}
+[2026-03-02 19:23:17] [INFO] [training] Best validation RMSE: 16.8114
+[2026-03-02 19:23:17] [INFO] [training] Feature importance plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/xgb_feature_importance.png
+[2026-03-02 19:23:17] [INFO] [training] XGBoost model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 19:23:17] [INFO] [training] XGBoost training completed in 4.23s
+[2026-03-02 19:23:17] [INFO] [training] XGBoost inference time: 0.24ms for 160 samples
+[2026-03-02 19:23:31] [INFO] [training] ==================================================
+[2026-03-02 19:23:31] [INFO] [training] Training XGBoost model...
+[2026-03-02 19:23:31] [INFO] [training] ==================================================
+[2026-03-02 19:23:31] [INFO] [training] Training samples: 746, Val: 160, Test: 160
+[2026-03-02 19:23:31] [INFO] [training] Features: 16
+[2026-03-02 19:23:31] [INFO] [training] Feature names: ['power_generation_mw', 'temperature_c', 'coal_price_inr', 'inventory_level_tonnes', 'is_holiday', 'is_weekend', 'month', 'quarter', 'day_of_week', 'lag_1', 'lag_7', 'lag_30', 'rolling_mean_7', 'rolling_mean_30', 'rolling_std_7', 'temp_coal_interaction']
+[2026-03-02 19:23:31] [INFO] [training] Starting Optuna hyperparameter tuning (50 trials)...
+[2026-03-02 19:23:41] [INFO] [training] Best hyperparameters: {'n_estimators': 598, 'max_depth': 5, 'learning_rate': 0.011795685481570265, 'subsample': 0.7549683880413974, 'colsample_bytree': 0.6011291392649613, 'min_child_weight': 7, 'reg_alpha': 7.474153185777597e-07, 'reg_lambda': 0.0012705936893694942, 'gamma': 0.0001385523045306132}
+[2026-03-02 19:23:41] [INFO] [training] Best validation RMSE: 16.9702
+[2026-03-02 19:23:41] [INFO] [training] Feature importance plot saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/reports/xgb_feature_importance.png
+[2026-03-02 19:23:41] [INFO] [training] XGBoost model saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 19:23:41] [INFO] [training] XGBoost training completed in 10.08s
+[2026-03-02 19:23:41] [INFO] [training] XGBoost inference time: 0.73ms for 160 samples

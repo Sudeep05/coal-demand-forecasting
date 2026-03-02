@@ -1,0 +1,22 @@
+[2026-03-02 19:29:48] [INFO] [api] Starting Coal Demand Forecasting API...
+[2026-03-02 19:29:49] [INFO] [api] Scaler loaded successfully
+[2026-03-02 19:29:49] [INFO] [api] XGBoost model loaded from /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-02 19:29:49] [INFO] [api] Model 'XGBoost' ready for serving
+[2026-03-02 19:29:49] [INFO] [api] API started successfully. Model: XGBoost
+[2026-03-02 19:30:30] [INFO] [api] GET /health - Status: 200 - Duration: 1.06ms
+[2026-03-02 19:30:59] [INFO] [api] GET / - Status: 200 - Duration: 1.97ms
+[2026-03-02 19:30:59] [INFO] [api] GET /favicon.ico - Status: 404 - Duration: 0.23ms
+[2026-03-02 19:31:05] [INFO] [api] GET /health - Status: 200 - Duration: 0.70ms
+[2026-03-02 19:32:09] [INFO] [api] Prediction: date=2025-06-01, predicted=240.12 tonnes
+[2026-03-02 19:32:09] [INFO] [api] POST /predict - Status: 200 - Duration: 6.70ms
+[2026-03-02 19:32:19] [INFO] [api] GET /predict - Status: 405 - Duration: 1.03ms
+[2026-03-02 19:32:22] [INFO] [api] GET /predict - Status: 405 - Duration: 0.53ms
+[2026-03-02 19:33:30] [INFO] [api] GET / - Status: 200 - Duration: 1.18ms
+[2026-03-02 19:34:50] [INFO] [api] GET /health - Status: 200 - Duration: 0.25ms
+[2026-03-02 19:35:25] [INFO] [api] GET /health - Status: 200 - Duration: 0.72ms
+[2026-03-02 19:36:26] [INFO] [api] GET /docs - Status: 200 - Duration: 6.43ms
+[2026-03-02 19:36:27] [INFO] [api] GET /openapi.json - Status: 200 - Duration: 16.97ms
+[2026-03-02 19:36:38] [INFO] [api] GET /health - Status: 200 - Duration: 0.97ms
+[2026-03-02 19:36:38] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-02 19:36:38] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-02 19:36:38] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 33.11ms

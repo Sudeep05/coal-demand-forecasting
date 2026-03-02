@@ -1,0 +1,84 @@
+[2026-03-02 18:09:33] [INFO] [pipeline] ============================================================
+[2026-03-02 18:09:33] [INFO] [pipeline]   COAL DEMAND FORECASTING — TRAINING PIPELINE
+[2026-03-02 18:09:33] [INFO] [pipeline] ============================================================
+[2026-03-02 18:09:33] [INFO] [pipeline] Pipeline started at 2026-03-02 18:09:33
+[2026-03-02 18:09:33] [INFO] [pipeline] 
+[PHASE 1/5] Generating synthetic data...
+[2026-03-02 18:09:33] [INFO] [pipeline] [PHASE 1/5] Data generation completed in 0.03s
+[2026-03-02 18:09:33] [INFO] [pipeline] 
+[PHASE 2/5] Running Exploratory Data Analysis...
+[2026-03-02 18:09:34] [INFO] [pipeline] [PHASE 2/5] EDA completed in 1.11s
+[2026-03-02 18:09:34] [INFO] [pipeline] 
+[PHASE 3/5] Preprocessing data...
+[2026-03-02 18:09:34] [INFO] [pipeline] [PHASE 3/5] Preprocessing completed in 0.03s
+[2026-03-02 18:09:34] [INFO] [pipeline] 
+[PHASE 4/5] Training all models...
+[2026-03-02 18:09:34] [INFO] [pipeline] 
+--- Training ARIMA ---
+[2026-03-02 18:10:13] [INFO] [pipeline] 
+--- Training Prophet ---
+[2026-03-02 18:10:13] [ERROR] [pipeline] Prophet training failed: No module named 'prophet'
+[2026-03-02 18:10:13] [INFO] [pipeline] 
+--- Training LSTM ---
+[2026-03-02 18:12:47] [INFO] [pipeline] ============================================================
+[2026-03-02 18:12:47] [INFO] [pipeline]   COAL DEMAND FORECASTING — TRAINING PIPELINE
+[2026-03-02 18:12:47] [INFO] [pipeline] ============================================================
+[2026-03-02 18:12:47] [INFO] [pipeline] Pipeline started at 2026-03-02 18:12:47
+[2026-03-02 18:12:47] [INFO] [pipeline] 
+[PHASE 1/5] Generating synthetic data...
+[2026-03-02 18:12:47] [INFO] [pipeline] [PHASE 1/5] Data generation completed in 0.01s
+[2026-03-02 18:12:47] [INFO] [pipeline] 
+[PHASE 2/5] Running Exploratory Data Analysis...
+[2026-03-02 18:12:48] [INFO] [pipeline] [PHASE 2/5] EDA completed in 0.94s
+[2026-03-02 18:12:48] [INFO] [pipeline] 
+[PHASE 3/5] Preprocessing data...
+[2026-03-02 18:12:48] [INFO] [pipeline] [PHASE 3/5] Preprocessing completed in 0.02s
+[2026-03-02 18:12:48] [INFO] [pipeline] 
+[PHASE 4/5] Training all models...
+[2026-03-02 18:12:48] [INFO] [pipeline] 
+--- Training ARIMA ---
+[2026-03-02 18:13:00] [INFO] [pipeline] 
+--- Training Prophet ---
+[2026-03-02 18:13:01] [INFO] [pipeline] 
+--- Training LSTM ---
+[2026-03-02 18:17:28] [INFO] [pipeline] ============================================================
+[2026-03-02 18:17:28] [INFO] [pipeline]   COAL DEMAND FORECASTING — TRAINING PIPELINE
+[2026-03-02 18:17:28] [INFO] [pipeline] ============================================================
+[2026-03-02 18:17:28] [INFO] [pipeline] Pipeline started at 2026-03-02 18:17:28
+[2026-03-02 18:17:28] [INFO] [pipeline] 
+[PHASE 1/5] Generating synthetic data...
+[2026-03-02 18:17:28] [INFO] [pipeline] [PHASE 1/5] Data generation completed in 0.02s
+[2026-03-02 18:17:28] [INFO] [pipeline] 
+[PHASE 2/5] Running Exploratory Data Analysis...
+[2026-03-02 18:17:29] [INFO] [pipeline] [PHASE 2/5] EDA completed in 0.93s
+[2026-03-02 18:17:29] [INFO] [pipeline] 
+[PHASE 3/5] Preprocessing data...
+[2026-03-02 18:17:29] [INFO] [pipeline] [PHASE 3/5] Preprocessing completed in 0.02s
+[2026-03-02 18:17:29] [INFO] [pipeline] 
+[PHASE 4/5] Training all models...
+[2026-03-02 18:17:29] [INFO] [pipeline] 
+--- Training ARIMA ---
+[2026-03-02 18:17:42] [INFO] [pipeline] 
+--- Training Prophet ---
+[2026-03-02 18:17:42] [INFO] [pipeline] 
+--- Training LSTM ---
+[2026-03-02 18:17:55] [INFO] [pipeline] 
+--- Training XGBoost ---
+[2026-03-02 18:17:59] [INFO] [pipeline] [PHASE 4/5] Model training completed in 29.34s
+[2026-03-02 18:17:59] [INFO] [pipeline] Successfully trained 4 models
+[2026-03-02 18:17:59] [INFO] [pipeline] 
+[PHASE 5/5] Evaluating all models...
+[2026-03-02 18:17:59] [INFO] [pipeline] [PHASE 5/5] Evaluation completed in 0.22s
+[2026-03-02 18:17:59] [INFO] [pipeline] Best model metadata saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/best_model_meta.json
+[2026-03-02 18:17:59] [INFO] [pipeline] 
+╔══════════════════════════════════════════════════╗
+║          PIPELINE EXECUTION SUMMARY              ║
+╠══════════════════════════════════════════════════╣
+║  Total execution time:     30.54s                ║
+║  Models trained:               4                 ║
+║  Best model:            XGBoost                    ║
+║  Best MAPE:                 6.84%                ║
+║  Best RMSE:                22.56                 ║
+╚══════════════════════════════════════════════════╝
+
+[2026-03-02 18:17:59] [INFO] [pipeline] Best model: XGBoost with MAPE=6.84%
