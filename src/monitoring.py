@@ -22,8 +22,26 @@ from src.logger import get_logger
 
 logger = get_logger(__name__)
 
-# Features to monitor for drift (exclude target and date columns)
-_SKIP_COLS = {"date", "coal_demand_tonnes", "ds", "y"}
+# Target column name in processed CSVs
+TARGET_COL = "coal_consumption_tonnes"
+
+# Columns to SKIP when checking drift
+# — target, date, and engineered features (lags, rolling stats, calendar)
+#   because time-ordered splits naturally cause distributional shifts
+#   in time-derived features — that's not real data drift.
+_SKIP_COLS = {
+    "date", "coal_demand_tonnes", "coal_consumption_tonnes", "ds", "y",
+    # Calendar features (always differ between time windows)
+    "month", "quarter", "day_of_week", "day_of_year", "week_of_year",
+    # Lag features (shift with the target)
+    "lag_1", "lag_2", "lag_3", "lag_7", "lag_14", "lag_30",
+    # Rolling / EWM features (derived from target)
+    "rolling_mean_7", "rolling_mean_14", "rolling_mean_30",
+    "rolling_std_7", "rolling_min_7", "rolling_max_7", "ewm_7",
+    # Interaction / derived features
+    "power_lag_1", "temp_coal_interaction", "temp_squared",
+    "power_temp_interaction",
+}
 
 
 def detect_data_drift(
@@ -86,20 +104,17 @@ def check_performance(
         # Load model
         model = joblib.load(XGBOOST_MODEL_PATH)
 
-        # Determine feature columns (same logic as training)
+        # Use ALL numeric features (same as training) — only exclude date + target
+        _perf_skip = {"date", "coal_consumption_tonnes", "coal_demand_tonnes", "ds", "y"}
         feature_cols = [
             c for c in test_df.select_dtypes(include=[np.number]).columns
-            if c.lower() not in _SKIP_COLS
+            if c.lower() not in _perf_skip
         ]
 
-        X_test = test_df[feature_cols].values
-        y_test = test_df["coal_demand_tonnes"].values
+        X_test = test_df[feature_cols]
+        y_test = test_df[TARGET_COL].values
 
-        # Load scaler if available
-        if os.path.exists(SCALER_PATH):
-            scaler = joblib.load(SCALER_PATH)
-            X_test = scaler.transform(X_test)
-
+        # XGBoost doesn't need scaling — predict directly
         preds = model.predict(X_test)
 
         mask = y_test != 0

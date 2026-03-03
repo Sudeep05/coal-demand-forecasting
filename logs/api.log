@@ -25,3 +25,1056 @@
 [2026-03-03 08:48:11] [INFO] [api] Running batch prediction for 15 requests
 [2026-03-03 08:48:11] [INFO] [api] Batch prediction: 15 forecasts generated
 [2026-03-03 08:48:11] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 43.41ms
+[2026-03-03 16:28:06] [INFO] [api] GET /health - Status: 200 - Duration: 6.62ms
+[2026-03-03 16:28:08] [INFO] [api] GET /health - Status: 200 - Duration: 0.91ms
+[2026-03-03 16:28:08] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 16:28:08] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 16:28:08] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 52.09ms
+[2026-03-03 16:28:24] [INFO] [api] GET /health - Status: 200 - Duration: 0.45ms
+[2026-03-03 16:28:29] [INFO] [api] GET /health - Status: 200 - Duration: 0.37ms
+[2026-03-03 16:28:31] [INFO] [api] GET /health - Status: 200 - Duration: 0.58ms
+[2026-03-03 16:28:31] [INFO] [api] POST /predict/batch - Status: 422 - Duration: 5.38ms
+[2026-03-03 16:28:36] [INFO] [api] GET /health - Status: 200 - Duration: 0.57ms
+[2026-03-03 16:28:36] [INFO] [api] POST /predict/batch - Status: 422 - Duration: 3.22ms
+[2026-03-03 16:28:41] [INFO] [api] GET /health - Status: 200 - Duration: 0.52ms
+[2026-03-03 16:28:43] [INFO] [api] GET /health - Status: 200 - Duration: 0.60ms
+[2026-03-03 16:28:43] [INFO] [api] POST /predict/batch - Status: 422 - Duration: 3.34ms
+[2026-03-03 18:29:00] [INFO] [api] GET /docs - Status: 200 - Duration: 2.26ms
+[2026-03-03 18:29:00] [INFO] [api] GET /openapi.json - Status: 200 - Duration: 0.49ms
+[2026-03-03 18:29:13] [INFO] [api] GET /health - Status: 200 - Duration: 1.61ms
+[2026-03-03 18:29:29] [INFO] [api] GET /health - Status: 200 - Duration: 0.35ms
+[2026-03-03 18:29:33] [INFO] [api] GET /health - Status: 200 - Duration: 0.59ms
+[2026-03-03 18:29:33] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:29:33] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:29:33] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 47.43ms
+[2026-03-03 18:29:36] [INFO] [api] GET /health - Status: 200 - Duration: 0.51ms
+[2026-03-03 18:29:39] [INFO] [api] GET /health - Status: 200 - Duration: 0.35ms
+[2026-03-03 18:29:39] [INFO] [api] GET /health - Status: 200 - Duration: 0.53ms
+[2026-03-03 18:29:39] [INFO] [api] Running batch prediction for 16 requests
+[2026-03-03 18:29:40] [INFO] [api] Batch prediction: 16 forecasts generated
+[2026-03-03 18:29:40] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 31.50ms
+[2026-03-03 18:29:46] [INFO] [api] GET /health - Status: 200 - Duration: 0.46ms
+[2026-03-03 18:29:48] [INFO] [api] GET /health - Status: 200 - Duration: 0.58ms
+[2026-03-03 18:29:48] [INFO] [api] POST /predict/batch - Status: 422 - Duration: 2.27ms
+[2026-03-03 18:34:24] [INFO] [api] GET /health - Status: 200 - Duration: 0.27ms
+[2026-03-03 18:35:09] [INFO] [api] GET /health - Status: 200 - Duration: 1.19ms
+[2026-03-03 18:35:09] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:35:09] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:35:09] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 28.78ms
+[2026-03-03 18:35:42] [INFO] [api] GET /health - Status: 200 - Duration: 0.62ms
+[2026-03-03 18:40:04] [INFO] [api] GET /health - Status: 200 - Duration: 1.11ms
+[2026-03-03 18:40:07] [INFO] [api] GET /health - Status: 200 - Duration: 0.60ms
+[2026-03-03 18:43:42] [INFO] [api] Starting Coal Demand Forecasting API...
+[2026-03-03 18:43:43] [INFO] [api] Scaler loaded successfully
+[2026-03-03 18:43:43] [INFO] [api] XGBoost model loaded from /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-03 18:43:43] [INFO] [api] Model 'XGBoost' ready for serving
+[2026-03-03 18:43:43] [INFO] [api] API started successfully. Model: XGBoost
+[2026-03-03 18:44:15] [INFO] [api] GET /health - Status: 200 - Duration: 0.63ms
+[2026-03-03 18:44:26] [INFO] [api] GET /health - Status: 200 - Duration: 0.17ms
+[2026-03-03 18:47:32] [INFO] [api] GET /health - Status: 200 - Duration: 0.15ms
+[2026-03-03 18:47:35] [INFO] [api] GET /health - Status: 200 - Duration: 0.49ms
+[2026-03-03 18:47:42] [INFO] [api] GET /health - Status: 200 - Duration: 0.26ms
+[2026-03-03 18:47:42] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-01: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-02: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-03: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-04: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-05: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-06: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-07: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-08: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-09: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-10: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-11: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-12: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-13: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-14: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [ERROR] [api] Batch prediction failed for 2025-01-15: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:42] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:47:42] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 39.75ms
+[2026-03-03 18:47:44] [INFO] [api] GET /health - Status: 200 - Duration: 0.62ms
+[2026-03-03 18:47:44] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-01: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-02: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-03: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-04: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-05: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-06: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-07: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-08: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-09: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-10: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-11: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-12: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-13: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-14: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [ERROR] [api] Batch prediction failed for 2025-01-15: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:47:44] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:47:44] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 43.62ms
+[2026-03-03 18:48:14] [INFO] [api] GET /health - Status: 200 - Duration: 0.56ms
+[2026-03-03 18:48:14] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-01: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-02: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-03: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-04: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-05: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-06: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-07: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-08: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-09: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-10: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-11: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-12: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-13: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-14: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [ERROR] [api] Batch prediction failed for 2025-01-15: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:48:14] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:48:14] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 36.26ms
+[2026-03-03 18:49:25] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+Traceback (most recent call last):
+  File "/Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/api/predictor.py", line 177, in run_prediction
+    prediction = float(self.model.predict(features)[0])
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/sklearn.py", line 1446, in predict
+    predts = self.get_booster().inplace_predict(
+        data=X,
+    ...<4 lines>...
+        validate_features=validate_features,
+    )
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 751, in inner_f
+    return func(**kwargs)
+  File "/opt/anaconda3/lib/python3.13/site-packages/xgboost/core.py", line 2865, in inplace_predict
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:49:25] [ERROR] [api] Prediction failed: Feature shape mismatch, expected: 28, got 16
+[2026-03-03 18:49:25] [INFO] [api] POST /predict - Status: 500 - Duration: 2.23ms
+[2026-03-03 18:50:31] [INFO] [api] Starting Coal Demand Forecasting API...
+[2026-03-03 18:50:32] [INFO] [api] Scaler loaded successfully
+[2026-03-03 18:50:32] [INFO] [api] XGBoost model loaded from /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/models/xgboost_model.pkl
+[2026-03-03 18:50:32] [INFO] [api] Model 'XGBoost' ready for serving
+[2026-03-03 18:50:32] [INFO] [api] API started successfully. Model: XGBoost
+[2026-03-03 18:51:05] [INFO] [api] Prediction: date=2025-01-05, predicted=270.59 tonnes
+[2026-03-03 18:51:05] [INFO] [api] POST /predict - Status: 200 - Duration: 6.14ms
+[2026-03-03 18:51:13] [INFO] [api] Running batch prediction for 3 requests
+[2026-03-03 18:51:13] [INFO] [api] Batch prediction: 3 forecasts generated
+[2026-03-03 18:51:13] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 3.15ms
+[2026-03-03 18:51:26] [INFO] [api] GET /health - Status: 200 - Duration: 0.47ms
+[2026-03-03 18:51:28] [INFO] [api] GET /health - Status: 200 - Duration: 0.59ms
+[2026-03-03 18:51:28] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:51:28] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:51:28] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 21.48ms
+[2026-03-03 18:51:34] [INFO] [api] GET /health - Status: 200 - Duration: 0.54ms
+[2026-03-03 18:57:29] [INFO] [api] GET /health - Status: 200 - Duration: 0.50ms
+[2026-03-03 18:58:42] [INFO] [api] GET /health - Status: 200 - Duration: 0.32ms
+[2026-03-03 18:59:13] [INFO] [api] GET /health - Status: 200 - Duration: 0.55ms
+[2026-03-03 18:59:13] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:59:13] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:59:13] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 25.92ms
+[2026-03-03 18:59:36] [INFO] [api] GET /health - Status: 200 - Duration: 0.56ms
+[2026-03-03 18:59:36] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 18:59:36] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 18:59:36] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 16.63ms

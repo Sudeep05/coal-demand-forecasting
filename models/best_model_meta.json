@@ -3,5 +3,14 @@
   "mape": 3.95,
   "rmse": 15.48,
   "trained_on": "2026-03-03 09:23:09",
-  "version": "1.0"
+  "version": "1.0",
+  "economic_impact": {
+    "total_annual_saving_inr": 102939128.45,
+    "holding_cost_saved_annual": 621138.7,
+    "shortage_cost_avoided_annual": 102317989.75,
+    "excess_inventory_days": 95,
+    "avg_excess_tonnes": 8.35,
+    "shortage_events_total": 65,
+    "shortage_events_prevented": 13
+  }
 }

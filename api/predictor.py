@@ -105,32 +105,59 @@ class CoalDemandPredictor:
             self.is_loaded = False
 
     def _prepare_features(self, request: ForecastRequest) -> np.ndarray:
-        """Transform API request into model feature vector."""
+        """Transform API request into model feature vector (28 features for XGBoost)."""
         try:
             dt = pd.to_datetime(request.date)
+
+            # Estimated demand proxies based on inputs
+            demand_est = request.power_generation_mw * 0.45
+            demand_est_prev = demand_est * 0.98
+
             features = {
+                # --- 6 raw input features ---
                 "power_generation_mw": request.power_generation_mw,
                 "temperature_c": request.temperature_c,
                 "coal_price_inr": request.coal_price_inr,
                 "inventory_level_tonnes": 3000.0,  # default estimate
                 "is_holiday": int(request.is_holiday),
                 "is_weekend": int(request.is_weekend),
-                "lag_1": request.power_generation_mw * 0.45,  # estimate
-                "lag_7": request.power_generation_mw * 0.45,
-                "lag_30": request.power_generation_mw * 0.44,
-                "rolling_mean_7": request.power_generation_mw * 0.45,
-                "rolling_mean_30": request.power_generation_mw * 0.45,
-                "rolling_std_7": 15.0,
+                # --- 5 calendar features ---
                 "month": dt.month,
                 "quarter": dt.quarter,
                 "day_of_week": dt.dayofweek,
+                "day_of_year": dt.dayofyear,
+                "week_of_year": int(dt.strftime("%W")),
+                # --- 6 lag features (estimated from demand proxy) ---
+                "lag_1": demand_est,
+                "lag_2": demand_est * 0.99,
+                "lag_3": demand_est * 0.98,
+                "lag_7": demand_est * 0.97,
+                "lag_14": demand_est * 0.96,
+                "lag_30": demand_est * 0.95,
+                # --- 6 rolling / ewm features ---
+                "rolling_mean_7": demand_est,
+                "rolling_mean_14": demand_est * 0.99,
+                "rolling_mean_30": demand_est * 0.98,
+                "rolling_std_7": 15.0,
+                "rolling_min_7": demand_est * 0.92,
+                "rolling_max_7": demand_est * 1.08,
+                "ewm_7": demand_est,
+                # --- 1 power lag ---
+                "power_lag_1": request.power_generation_mw * 0.99,
+                # --- 3 interaction / polynomial features ---
                 "temp_coal_interaction": request.temperature_c * request.coal_price_inr,
+                "temp_squared": request.temperature_c ** 2,
+                "power_temp_interaction": request.power_generation_mw * request.temperature_c,
             }
 
             feature_df = pd.DataFrame([features])
 
+            # XGBoost does NOT need scaling — predict on raw features
+            if self.model_name == "XGBoost":
+                return feature_df.values
+
+            # For other models that may need scaling
             if self.scaler is not None:
-                # Use scaler's feature names if available
                 try:
                     expected_cols = self.scaler.feature_names_in_
                     for col in expected_cols:
@@ -139,12 +166,9 @@ class CoalDemandPredictor:
                     feature_df = feature_df[expected_cols]
                 except AttributeError:
                     pass
+                return self.scaler.transform(feature_df)
 
-                feature_array = self.scaler.transform(feature_df)
-            else:
-                feature_array = feature_df.values
-
-            return feature_array
+            return feature_df.values
 
         except Exception as e:
             logger.error(f"Feature preparation failed: {e}", exc_info=True)

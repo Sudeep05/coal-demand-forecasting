@@ -95,6 +95,24 @@ if meta:
     st.sidebar.info(f"Model: {meta.get('model_name', 'N/A')}")
     st.sidebar.info(f"MAPE: {meta.get('mape', 'N/A'):.2f}%")
 
+st.sidebar.markdown("---")
+st.sidebar.subheader("ℹ️ Quick Reference")
+st.sidebar.markdown(
+    """
+    | Item | Detail |
+    |------|--------|
+    | **Training Data** | 1 Jan 2022 – 31 Dec 2024 |
+    | **Forecast From** | 1 Jan 2025 onwards |
+    | **Max Batch Size** | 30 days per request |
+    | **Confidence** | 95 % interval |
+    """
+)
+st.sidebar.caption(
+    "The model was trained on 3 years of historical data (2022-2024). "
+    "Predictions are intended for dates from **1 Jan 2025** onwards. "
+    "Batch predictions are capped at **30 days** per API call."
+)
+
 # ─── Tabs ───────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📈 Forecast View",
@@ -111,6 +129,15 @@ with tab1:
     st.header("Coal Demand Forecast")
     st.markdown("Generate forecasts by selecting a date range and parameters.")
 
+    st.info(
+        "📌 **Forecast Guidelines**\n\n"
+        "• **Training period:** Jan 2022 – Dec 2024 (3 years of historical data)\n"
+        "• **Predict from:** 1 January 2025 onwards\n"
+        "• **Max batch size:** 30 days per request\n"
+        "• **Confidence interval:** 95%\n\n"
+        "Select a date range within **1 Jan 2025 – 31 Dec 2025** for the most reliable predictions."
+    )
+
     col1, col2 = st.columns(2)
     with col1:
         start_date = st.date_input("Start Date", value=datetime(2025, 1, 1))
@@ -123,6 +150,27 @@ with tab1:
         include_holidays = st.checkbox("Include holiday effects", value=True)
 
     if st.button("Generate Forecast", type="primary"):
+        # ── Validation guards ───────────────────────────────────────────
+        from datetime import date as _date
+        _min_forecast = _date(2025, 1, 1)
+        _span = (end_date - start_date).days + 1
+
+        if start_date < _min_forecast:
+            st.error(
+                "⚠️ **Start date must be 1 Jan 2025 or later.** "
+                "The model was trained on 2022-2024 data and is designed to forecast from 2025 onwards."
+            )
+            st.stop()
+        if _span > 30:
+            st.error(
+                f"⚠️ **Date range is {_span} days — maximum allowed is 30 days.** "
+                "Please shorten your date range."
+            )
+            st.stop()
+        if end_date < start_date:
+            st.error("⚠️ **End date must be on or after the start date.**")
+            st.stop()
+
         with st.spinner("Generating forecasts..."):
             # Build batch request
             date_range = pd.date_range(start=start_date, end=end_date, freq="D")
@@ -328,6 +376,26 @@ with tab4:
             ]
         })
         st.dataframe(detail_df, use_container_width=True)
+
+        # Assumptions & methodology note
+        st.markdown("---")
+        st.caption(
+            "**Assumptions & Methodology**\n\n"
+            "• **Baseline comparison:** Naive forecast (tomorrow's demand = today's demand, ~11% MAPE) "
+            "vs XGBoost ML model (3.95% MAPE).\n\n"
+            "• **Coal price:** ₹11,000 per tonne (average market rate).\n\n"
+            "• **Holding cost:** 2% of coal value per day — covers storage, insurance, "
+            "tied-up capital, and handling.\n\n"
+            "• **Shortage penalty:** 3× coal price per tonne — reflects emergency procurement "
+            "at premium rates, contractual penalties, and potential power disruption costs.\n\n"
+            "• **Savings formula:** `Annual Savings = (Naive Forecast Cost − ML Forecast Cost) × 365 / test days`\n\n"
+            "• **Why shortage savings dominate:** A single tonne of shortage costs ₹33,000 (3× price) "
+            "while a tonne of overstock costs only ₹220/day (2% of price). "
+            "Preventing even a few shortage events saves significantly more than reducing overstock.\n\n"
+            "• These are **estimated savings** based on industry-standard cost assumptions. "
+            "Actual figures depend on the power plant's specific contracts, storage capacity, "
+            "and penalty clauses."
+        )
     else:
         st.warning("Economic impact data not available. Run the training pipeline first.")
 
@@ -363,10 +431,14 @@ with tab5:
                     else:
                         st.success("✅ No data drift detected")
 
-                    if perf.get("is_degraded", False):
-                        st.error(f"⚠️ Model degraded — MAPE: {perf.get('current_mape', 0):.2f}%")
-                    else:
-                        st.success(f"✅ Model OK — MAPE: {perf.get('current_mape', 0):.2f}%")
+                    current_mape = perf.get("current_mape")
+                    if perf.get("error"):
+                        st.warning(f"⚠️ Performance check error: {perf['error']}")
+                    elif current_mape is not None:
+                        if perf.get("is_degraded", False):
+                            st.error(f"⚠️ Model degraded — MAPE: {current_mape:.2f}%")
+                        else:
+                            st.success(f"✅ Model OK — MAPE: {current_mape:.2f}%")
 
                     # Drift details
                     if "feature_results" in drift:
