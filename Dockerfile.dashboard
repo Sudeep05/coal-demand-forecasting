@@ -8,6 +8,7 @@ COPY dashboard/ ./dashboard/
 COPY reports/ ./reports/
 COPY models/ ./models/
 COPY src/ ./src/
+COPY data/ ./data/
 
 EXPOSE 8501
 
