@@ -103,7 +103,7 @@ def _generate_power_generation(dates: pd.DatetimeIndex, is_holiday: np.ndarray) 
     power = (BASE_POWER_MW + summer_peak + winter_peak + winter_peak2) * weekday_factor * holiday_factor
 
     # Random daily noise
-    noise = np.random.normal(0, 15, n)
+    noise = np.random.normal(0, 8, n)
     power = power + noise
 
     return np.clip(power, 200, 800)
@@ -161,8 +161,8 @@ def generate_data() -> pd.DataFrame:
 
         # Coal consumption derived from power generation
         np.random.seed(77)
-        efficiency_noise = np.random.normal(EFFICIENCY_FACTOR, 0.03, n)
-        coal_consumption = power_gen * np.clip(efficiency_noise, 0.35, 0.55)
+        efficiency_noise = np.random.normal(EFFICIENCY_FACTOR, 0.015, n)
+        coal_consumption = power_gen * np.clip(efficiency_noise, 0.38, 0.52)
         coal_consumption = np.clip(coal_consumption, 80, 500)
 
         # Inventory level with reorder logic

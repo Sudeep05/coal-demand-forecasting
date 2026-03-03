@@ -118,3 +118,43 @@
 [2026-03-02 19:15:13] [INFO] [data]   is_holiday: mean=0.04, std=0.19, min=0.00, max=1.00
 [2026-03-02 19:15:13] [INFO] [data]   is_weekend: mean=0.29, std=0.45, min=0.00, max=1.00
 [2026-03-02 19:15:13] [INFO] [data] Data generation complete. 1096 rows saved.
+[2026-03-03 08:43:58] [INFO] [data] Starting synthetic data generation...
+[2026-03-03 08:43:58] [INFO] [data] Generating 1096 days of data from 2022-01-01 to 2024-12-31
+[2026-03-03 08:43:58] [INFO] [data] Raw data shape: (1096, 8)
+[2026-03-03 08:43:58] [INFO] [data] Missing values per column (%):
+[2026-03-03 08:43:58] [INFO] [data]   power_generation_mw: 0.91%
+[2026-03-03 08:43:58] [INFO] [data]   coal_consumption_tonnes: 0.91%
+[2026-03-03 08:43:58] [INFO] [data]   temperature_c: 0.91%
+[2026-03-03 08:43:58] [INFO] [data]   coal_price_inr: 0.91%
+[2026-03-03 08:43:58] [INFO] [data]   inventory_level_tonnes: 0.91%
+[2026-03-03 08:43:58] [INFO] [data] Injected ~3% outliers into key columns
+[2026-03-03 08:43:58] [INFO] [data] Data saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/raw/coal_data.csv
+[2026-03-03 08:43:58] [INFO] [data] Column statistics:
+[2026-03-03 08:43:58] [INFO] [data]   power_generation_mw: mean=539.46, std=127.02, min=296.70, max=1802.34
+[2026-03-03 08:43:58] [INFO] [data]   coal_consumption_tonnes: mean=243.79, std=62.30, min=133.26, max=796.15
+[2026-03-03 08:43:58] [INFO] [data]   temperature_c: mean=25.09, std=10.91, min=5.00, max=46.20
+[2026-03-03 08:43:58] [INFO] [data]   coal_price_inr: mean=9401.64, std=898.37, min=8000.00, max=11140.55
+[2026-03-03 08:43:58] [INFO] [data]   inventory_level_tonnes: mean=3269.15, std=869.43, min=1732.83, max=5000.00
+[2026-03-03 08:43:58] [INFO] [data]   is_holiday: mean=0.04, std=0.19, min=0.00, max=1.00
+[2026-03-03 08:43:58] [INFO] [data]   is_weekend: mean=0.29, std=0.45, min=0.00, max=1.00
+[2026-03-03 08:43:58] [INFO] [data] Data generation complete. 1096 rows saved.
+[2026-03-03 09:11:06] [INFO] [data] Starting synthetic data generation...
+[2026-03-03 09:11:06] [INFO] [data] Generating 1096 days of data from 2022-01-01 to 2024-12-31
+[2026-03-03 09:11:06] [INFO] [data] Raw data shape: (1096, 8)
+[2026-03-03 09:11:06] [INFO] [data] Missing values per column (%):
+[2026-03-03 09:11:06] [INFO] [data]   power_generation_mw: 0.91%
+[2026-03-03 09:11:06] [INFO] [data]   coal_consumption_tonnes: 0.91%
+[2026-03-03 09:11:06] [INFO] [data]   temperature_c: 0.91%
+[2026-03-03 09:11:06] [INFO] [data]   coal_price_inr: 0.91%
+[2026-03-03 09:11:06] [INFO] [data]   inventory_level_tonnes: 0.91%
+[2026-03-03 09:11:06] [INFO] [data] Injected ~3% outliers into key columns
+[2026-03-03 09:11:06] [INFO] [data] Data saved to /Users/palasudeepkumar/Desktop/Foundation_Project/coal-demand-forecasting/data/raw/coal_data.csv
+[2026-03-03 09:11:06] [INFO] [data] Column statistics:
+[2026-03-03 09:11:06] [INFO] [data]   power_generation_mw: mean=538.88, std=127.00, min=297.87, max=1800.35
+[2026-03-03 09:11:06] [INFO] [data]   coal_consumption_tonnes: mean=243.51, std=62.31, min=133.79, max=795.28
+[2026-03-03 09:11:06] [INFO] [data]   temperature_c: mean=25.09, std=10.90, min=5.60, max=45.10
+[2026-03-03 09:11:06] [INFO] [data]   coal_price_inr: mean=9723.59, std=1331.23, min=8000.00, max=12464.73
+[2026-03-03 09:11:06] [INFO] [data]   inventory_level_tonnes: mean=3270.96, std=870.71, min=1729.91, max=5000.00
+[2026-03-03 09:11:06] [INFO] [data]   is_holiday: mean=0.04, std=0.19, min=0.00, max=1.00
+[2026-03-03 09:11:06] [INFO] [data]   is_weekend: mean=0.29, std=0.45, min=0.00, max=1.00
+[2026-03-03 09:11:06] [INFO] [data] Data generation complete. 1096 rows saved.

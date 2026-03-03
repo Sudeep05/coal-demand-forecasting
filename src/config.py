@@ -61,8 +61,8 @@ COAL_PRICE_MAX: float = 14000.0
 TRAIN_RATIO: float = 0.70
 VAL_RATIO: float = 0.15
 TEST_RATIO: float = 0.15
-LAG_FEATURES: list = [1, 7, 30]
-ROLLING_WINDOWS: list = [7, 30]
+LAG_FEATURES: list = [1, 2, 3, 7, 14, 30]
+ROLLING_WINDOWS: list = [7, 14, 30]
 IQR_MULTIPLIER: float = 1.5
 
 # ─── MODEL HYPERPARAMETERS ─────────────────────────────────────────────────────
@@ -79,7 +79,7 @@ LSTM_BATCH_SIZE: int = 32
 LSTM_EARLY_STOP_PATIENCE: int = 10
 
 # XGBoost / Optuna
-OPTUNA_N_TRIALS: int = 50
+OPTUNA_N_TRIALS: int = 100
 
 # Prophet
 PROPHET_YEARLY_SEASONALITY: bool = True

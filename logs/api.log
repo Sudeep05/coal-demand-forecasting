@@ -20,3 +20,8 @@
 [2026-03-02 19:36:38] [INFO] [api] Running batch prediction for 15 requests
 [2026-03-02 19:36:38] [INFO] [api] Batch prediction: 15 forecasts generated
 [2026-03-02 19:36:38] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 33.11ms
+[2026-03-03 08:48:08] [INFO] [api] GET /health - Status: 200 - Duration: 7.98ms
+[2026-03-03 08:48:11] [INFO] [api] GET /health - Status: 200 - Duration: 0.63ms
+[2026-03-03 08:48:11] [INFO] [api] Running batch prediction for 15 requests
+[2026-03-03 08:48:11] [INFO] [api] Batch prediction: 15 forecasts generated
+[2026-03-03 08:48:11] [INFO] [api] POST /predict/batch - Status: 200 - Duration: 43.41ms
