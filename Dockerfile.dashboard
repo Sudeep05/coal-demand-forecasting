@@ -2,7 +2,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 COPY requirements.txt .
-RUN pip install --no-cache-dir streamlit plotly pandas requests numpy
+RUN pip install --no-cache-dir streamlit plotly pandas requests numpy scipy scikit-learn xgboost joblib
 
 COPY dashboard/ ./dashboard/
 COPY reports/ ./reports/
